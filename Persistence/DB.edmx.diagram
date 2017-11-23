@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eb601c8c3d284478a34ba5dfb608a7a6" Name="Diagram1" ZoomLevel="98">
+        <EntityTypeShape EntityType="myWebModel.LANGUAGE" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="myWebModel.PROFILE" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="myWebModel.USER" Width="1.5" PointX="3" PointY="2.875" />
+        <AssociationConnector Association="myWebModel.FK_USER_LANGUAGE" />
+        <AssociationConnector Association="myWebModel.FK_USER_PROFILE" />
+        <EntityTypeShape EntityType="myWebModel.SERVIZI" Width="1.5" PointX="5.25" PointY="3.25" />
+        <AssociationConnector Association="myWebModel.FK_SERVIZI_USERS" />
+        <EntityTypeShape EntityType="myWebModel.GRUPPO" Width="1.5" PointX="7.375" PointY="0.875" />
+        <EntityTypeShape EntityType="myWebModel.vServiceGroup" Width="1.5" PointX="7.375" PointY="3.75" />
+        <AssociationConnector Association="myWebModel.GRUPPO_SERVIZI" />
+        <EntityTypeShape EntityType="myWebModel.MENU" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="myWebModel.vUserPermission" Width="1.5" PointX="3.375" PointY="7.75" />
+        <AssociationConnector Association="myWebModel.MENU_PROFILO" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

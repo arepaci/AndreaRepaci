@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="myWebModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="LANGUAGE">
+    <Key>
+      <PropertyRef Name="ID_LANGUAGE" />
+    </Key>
+    <Property Name="ID_LANGUAGE" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="USERS" Relationship="myWebModel.FK_USER_LANGUAGE" FromRole="LANGUAGE" ToRole="USER" />
+  </EntityType>
+  <EntityType Name="PROFILE">
+    <Key>
+      <PropertyRef Name="ID_PROFILE" />
+    </Key>
+    <Property Name="ID_PROFILE" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="USERS" Relationship="myWebModel.FK_USER_PROFILE" FromRole="PROFILE" ToRole="USER" />
+    <NavigationProperty Name="MENUs" Relationship="myWebModel.MENU_PROFILO" FromRole="PROFILE" ToRole="MENU" />
+  </EntityType>
+  <EntityContainer Name="myWebEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="LANGUAGEs" EntityType="Self.LANGUAGE" />
+    <EntitySet Name="PROFILEs" EntityType="Self.PROFILE" />
+    <EntitySet Name="USERS" EntityType="myWebModel.USER" />
+    <AssociationSet Name="FK_USER_LANGUAGE" Association="myWebModel.FK_USER_LANGUAGE">
+      <End Role="LANGUAGE" EntitySet="LANGUAGEs" />
+      <End Role="USER" EntitySet="USERS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USER_PROFILE" Association="myWebModel.FK_USER_PROFILE">
+      <End Role="PROFILE" EntitySet="PROFILEs" />
+      <End Role="USER" EntitySet="USERS" />
+    </AssociationSet>
+    <EntitySet Name="SERVIZIs" EntityType="myWebModel.SERVIZI" />
+    <AssociationSet Name="FK_SERVIZI_USERS" Association="myWebModel.FK_SERVIZI_USERS">
+      <End Role="USER" EntitySet="USERS" />
+      <End Role="SERVIZI" EntitySet="SERVIZIs" />
+    </AssociationSet>
+    <EntitySet Name="GRUPPOes" EntityType="myWebModel.GRUPPO" />
+    <EntitySet Name="vServiceGroups" EntityType="myWebModel.vServiceGroup" />
+    <AssociationSet Name="GRUPPO_SERVIZI" Association="myWebModel.GRUPPO_SERVIZI">
+      <End Role="GRUPPO" EntitySet="GRUPPOes" />
+      <End Role="SERVIZI" EntitySet="SERVIZIs" />
+    </AssociationSet>
+    <EntitySet Name="MENUs" EntityType="myWebModel.MENU" />
+    <EntitySet Name="vUserPermissions" EntityType="myWebModel.vUserPermission" />
+    <AssociationSet Name="MENU_PROFILO" Association="myWebModel.MENU_PROFILO">
+      <End Role="MENU" EntitySet="MENUs" />
+      <End Role="PROFILE" EntitySet="PROFILEs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="ID_USER" />
+    </Key>
+    <Property Name="ID_USER" Type="Guid" Nullable="false" />
+    <Property Name="NAME" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SURNAME" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TITLE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ID_PROFILE" Type="Guid" Nullable="false" />
+    <Property Name="EMAIL" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IS_ENABLED" Type="Boolean" />
+    <Property Name="PHONE_NUMBER" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MOBILE_PHONE_NUMBER" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID_LANGUAGE" Type="Guid" Nullable="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LANGUAGE" Relationship="myWebModel.FK_USER_LANGUAGE" FromRole="USER" ToRole="LANGUAGE" />
+    <NavigationProperty Name="PROFILE" Relationship="myWebModel.FK_USER_PROFILE" FromRole="USER" ToRole="PROFILE" />
+    <NavigationProperty Name="SERVIZIs" Relationship="myWebModel.FK_SERVIZI_USERS" FromRole="USER" ToRole="SERVIZI" />
+  </EntityType>
+  <Association Name="FK_USER_LANGUAGE">
+    <End Type="myWebModel.LANGUAGE" Role="LANGUAGE" Multiplicity="1" />
+    <End Type="myWebModel.USER" Role="USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LANGUAGE">
+        <PropertyRef Name="ID_LANGUAGE" />
+      </Principal>
+      <Dependent Role="USER">
+        <PropertyRef Name="ID_LANGUAGE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USER_PROFILE">
+    <End Type="myWebModel.PROFILE" Role="PROFILE" Multiplicity="1" />
+    <End Type="myWebModel.USER" Role="USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROFILE">
+        <PropertyRef Name="ID_PROFILE" />
+      </Principal>
+      <Dependent Role="USER">
+        <PropertyRef Name="ID_PROFILE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="SERVIZI">
+    <Key>
+      <PropertyRef Name="ID_SERVIZIO" />
+    </Key>
+    <Property Name="ID_SERVIZIO" Type="Guid" Nullable="false" />
+    <Property Name="ENDPOINT" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIZIONE" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FIRMA" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IS_ENABLED" Type="Boolean" Nullable="false" />
+    <Property Name="DATA_CREAZIONE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATA_MODIFICA" Type="DateTime" Precision="0" />
+    <Property Name="ID_USER" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="USER" Relationship="myWebModel.FK_SERVIZI_USERS" FromRole="SERVIZI" ToRole="USER" />
+    <NavigationProperty Name="GRUPPOes" Relationship="myWebModel.GRUPPO_SERVIZI" FromRole="SERVIZI" ToRole="GRUPPO" />
+  </EntityType>
+  <Association Name="FK_SERVIZI_USERS">
+    <End Type="myWebModel.USER" Role="USER" Multiplicity="1" />
+    <End Type="myWebModel.SERVIZI" Role="SERVIZI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="ID_USER" />
+      </Principal>
+      <Dependent Role="SERVIZI">
+        <PropertyRef Name="ID_USER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="GRUPPO">
+    <Key>
+      <PropertyRef Name="ID_GRUPPO" />
+    </Key>
+    <Property Name="ID_GRUPPO" Type="Guid" Nullable="false" />
+    <Property Name="DESCRIZIONE" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SERVIZIs" Relationship="myWebModel.GRUPPO_SERVIZI" FromRole="GRUPPO" ToRole="SERVIZI" />
+  </EntityType>
+  <EntityType Name="vServiceGroup">
+    <Key>
+      <PropertyRef Name="GRUPPO_SERVIZIO" />
+      <PropertyRef Name="ENDPOINT" />
+      <PropertyRef Name="FIRMA" />
+      <PropertyRef Name="ID_SERVIZIO" />
+      <PropertyRef Name="ID_GRUPPO" />
+    </Key>
+    <Property Name="GRUPPO_SERVIZIO" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ENDPOINT" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FIRMA" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID_SERVIZIO" Type="Guid" Nullable="false" />
+    <Property Name="ID_GRUPPO" Type="Guid" Nullable="false" />
+  </EntityType>
+  <Association Name="GRUPPO_SERVIZI">
+    <End Type="myWebModel.GRUPPO" Role="GRUPPO" Multiplicity="*" />
+    <End Type="myWebModel.SERVIZI" Role="SERVIZI" Multiplicity="*" />
+  </Association>
+  <EntityType Name="MENU">
+    <Key>
+      <PropertyRef Name="MENU_ID" />
+    </Key>
+    <Property Name="MENU_ID" Type="Guid" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MENU_ID_FATHER" Type="Guid" />
+    <NavigationProperty Name="PROFILEs" Relationship="myWebModel.MENU_PROFILO" FromRole="MENU" ToRole="PROFILE" />
+  </EntityType>
+  <EntityType Name="vUserPermission">
+    <Key>
+      <PropertyRef Name="ID_USER" />
+      <PropertyRef Name="USERNAME" />
+      <PropertyRef Name="ID_PROFILE" />
+      <PropertyRef Name="PROFILO" />
+      <PropertyRef Name="MENU" />
+      <PropertyRef Name="MENU_ID" />
+      <PropertyRef Name="ID_LANGUAGE" />
+      <PropertyRef Name="LANGUAGE" />
+    </Key>
+    <Property Name="ID_USER" Type="Guid" Nullable="false" />
+    <Property Name="USERNAME" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PASSWORD" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID_PROFILE" Type="Guid" Nullable="false" />
+    <Property Name="PROFILO" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MENU" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MENU_ID" Type="Guid" Nullable="false" />
+    <Property Name="ID_LANGUAGE" Type="Guid" Nullable="false" />
+    <Property Name="LANGUAGE" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="MENU_PROFILO">
+    <End Type="myWebModel.MENU" Role="MENU" Multiplicity="*" />
+    <End Type="myWebModel.PROFILE" Role="PROFILE" Multiplicity="*" />
+  </Association>
+</Schema>

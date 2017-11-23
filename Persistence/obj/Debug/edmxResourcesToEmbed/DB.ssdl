@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="myWebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GRUPPO">
+    <Key>
+      <PropertyRef Name="ID_GRUPPO" />
+    </Key>
+    <Property Name="ID_GRUPPO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DESCRIZIONE" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GRUPPO_SERVIZI">
+    <Key>
+      <PropertyRef Name="ID_GRUPPO" />
+      <PropertyRef Name="ID_SERVIZIO" />
+    </Key>
+    <Property Name="ID_GRUPPO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_SERVIZIO" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LANGUAGE">
+    <Key>
+      <PropertyRef Name="ID_LANGUAGE" />
+    </Key>
+    <Property Name="ID_LANGUAGE" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CODE" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MENU">
+    <Key>
+      <PropertyRef Name="MENU_ID" />
+    </Key>
+    <Property Name="MENU_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CODE" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="MENU_ID_FATHER" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="MENU_PROFILO">
+    <Key>
+      <PropertyRef Name="MENU_ID" />
+      <PropertyRef Name="PROFILO_ID" />
+    </Key>
+    <Property Name="MENU_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PROFILO_ID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PROFILE">
+    <Key>
+      <PropertyRef Name="ID_PROFILE" />
+    </Key>
+    <Property Name="ID_PROFILE" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CODE" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="DESCRIPTION" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SERVIZI">
+    <Key>
+      <PropertyRef Name="ID_SERVIZIO" />
+    </Key>
+    <Property Name="ID_SERVIZIO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ENDPOINT" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DESCRIZIONE" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FIRMA" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IS_ENABLED" Type="bit" Nullable="false" />
+    <Property Name="DATA_CREAZIONE" Type="datetime" Nullable="false" />
+    <Property Name="DATA_MODIFICA" Type="date" />
+    <Property Name="ID_USER" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CODE" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="USERS">
+    <Key>
+      <PropertyRef Name="ID_USER" />
+    </Key>
+    <Property Name="ID_USER" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SURNAME" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TITLE" Type="nvarchar" MaxLength="10" />
+    <Property Name="ID_PROFILE" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IS_ENABLED" Type="bit" />
+    <Property Name="PHONE_NUMBER" Type="nvarchar" MaxLength="30" />
+    <Property Name="MOBILE_PHONE_NUMBER" Type="nvarchar(max)" />
+    <Property Name="ID_LANGUAGE" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PASSWORD" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'myWeb.dbo.vServiceGroups'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="vServiceGroups">
+    <Key>
+      <PropertyRef Name="GRUPPO_SERVIZIO" />
+      <PropertyRef Name="ENDPOINT" />
+      <PropertyRef Name="FIRMA" />
+      <PropertyRef Name="ID_SERVIZIO" />
+      <PropertyRef Name="ID_GRUPPO" />
+    </Key>
+    <Property Name="GRUPPO_SERVIZIO" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CODE" Type="nvarchar(max)" />
+    <Property Name="ENDPOINT" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FIRMA" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ID_SERVIZIO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_GRUPPO" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'myWeb.dbo.vUserPermissions'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="vUserPermissions">
+    <Key>
+      <PropertyRef Name="ID_USER" />
+      <PropertyRef Name="USERNAME" />
+      <PropertyRef Name="ID_PROFILE" />
+      <PropertyRef Name="PROFILO" />
+      <PropertyRef Name="MENU" />
+      <PropertyRef Name="MENU_ID" />
+      <PropertyRef Name="ID_LANGUAGE" />
+      <PropertyRef Name="LANGUAGE" />
+    </Key>
+    <Property Name="ID_USER" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="USERNAME" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PASSWORD" Type="nvarchar(max)" />
+    <Property Name="ID_PROFILE" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PROFILO" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MENU" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MENU_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_LANGUAGE" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LANGUAGE" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_GRUPPO_SERVIZI_GRUPPO">
+    <End Role="GRUPPO" Type="Self.GRUPPO" Multiplicity="1" />
+    <End Role="GRUPPO_SERVIZI" Type="Self.GRUPPO_SERVIZI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GRUPPO">
+        <PropertyRef Name="ID_GRUPPO" />
+      </Principal>
+      <Dependent Role="GRUPPO_SERVIZI">
+        <PropertyRef Name="ID_GRUPPO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GRUPPO_SERVIZI_SERVIZI">
+    <End Role="SERVIZI" Type="Self.SERVIZI" Multiplicity="1" />
+    <End Role="GRUPPO_SERVIZI" Type="Self.GRUPPO_SERVIZI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVIZI">
+        <PropertyRef Name="ID_SERVIZIO" />
+      </Principal>
+      <Dependent Role="GRUPPO_SERVIZI">
+        <PropertyRef Name="ID_SERVIZIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MENU_PROFILO_MENU">
+    <End Role="MENU" Type="Self.MENU" Multiplicity="1" />
+    <End Role="MENU_PROFILO" Type="Self.MENU_PROFILO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MENU">
+        <PropertyRef Name="MENU_ID" />
+      </Principal>
+      <Dependent Role="MENU_PROFILO">
+        <PropertyRef Name="MENU_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MENU_PROFILO_PROFILE">
+    <End Role="PROFILE" Type="Self.PROFILE" Multiplicity="1" />
+    <End Role="MENU_PROFILO" Type="Self.MENU_PROFILO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROFILE">
+        <PropertyRef Name="ID_PROFILE" />
+      </Principal>
+      <Dependent Role="MENU_PROFILO">
+        <PropertyRef Name="PROFILO_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SERVIZI_USERS">
+    <End Role="USERS" Type="Self.USERS" Multiplicity="1" />
+    <End Role="SERVIZI" Type="Self.SERVIZI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USERS">
+        <PropertyRef Name="ID_USER" />
+      </Principal>
+      <Dependent Role="SERVIZI">
+        <PropertyRef Name="ID_USER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USER_LANGUAGE">
+    <End Role="LANGUAGE" Type="Self.LANGUAGE" Multiplicity="1" />
+    <End Role="USERS" Type="Self.USERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LANGUAGE">
+        <PropertyRef Name="ID_LANGUAGE" />
+      </Principal>
+      <Dependent Role="USERS">
+        <PropertyRef Name="ID_LANGUAGE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USER_PROFILE">
+    <End Role="PROFILE" Type="Self.PROFILE" Multiplicity="1" />
+    <End Role="USERS" Type="Self.USERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROFILE">
+        <PropertyRef Name="ID_PROFILE" />
+      </Principal>
+      <Dependent Role="USERS">
+        <PropertyRef Name="ID_PROFILE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="myWebModelStoreContainer">
+    <EntitySet Name="GRUPPO" EntityType="Self.GRUPPO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GRUPPO_SERVIZI" EntityType="Self.GRUPPO_SERVIZI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LANGUAGE" EntityType="Self.LANGUAGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MENU" EntityType="Self.MENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MENU_PROFILO" EntityType="Self.MENU_PROFILO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PROFILE" EntityType="Self.PROFILE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SERVIZI" EntityType="Self.SERVIZI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USERS" EntityType="Self.USERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vServiceGroups" EntityType="Self.vServiceGroups" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vServiceGroups].[GRUPPO_SERVIZIO] AS [GRUPPO_SERVIZIO], 
+    [vServiceGroups].[CODE] AS [CODE], 
+    [vServiceGroups].[ENDPOINT] AS [ENDPOINT], 
+    [vServiceGroups].[FIRMA] AS [FIRMA], 
+    [vServiceGroups].[ID_SERVIZIO] AS [ID_SERVIZIO], 
+    [vServiceGroups].[ID_GRUPPO] AS [ID_GRUPPO]
+    FROM [dbo].[vServiceGroups] AS [vServiceGroups]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vUserPermissions" EntityType="Self.vUserPermissions" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vUserPermissions].[ID_USER] AS [ID_USER], 
+    [vUserPermissions].[USERNAME] AS [USERNAME], 
+    [vUserPermissions].[PASSWORD] AS [PASSWORD], 
+    [vUserPermissions].[ID_PROFILE] AS [ID_PROFILE], 
+    [vUserPermissions].[PROFILO] AS [PROFILO], 
+    [vUserPermissions].[MENU] AS [MENU], 
+    [vUserPermissions].[MENU_ID] AS [MENU_ID], 
+    [vUserPermissions].[ID_LANGUAGE] AS [ID_LANGUAGE], 
+    [vUserPermissions].[LANGUAGE] AS [LANGUAGE]
+    FROM [dbo].[vUserPermissions] AS [vUserPermissions]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_GRUPPO_SERVIZI_GRUPPO" Association="Self.FK_GRUPPO_SERVIZI_GRUPPO">
+      <End Role="GRUPPO" EntitySet="GRUPPO" />
+      <End Role="GRUPPO_SERVIZI" EntitySet="GRUPPO_SERVIZI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GRUPPO_SERVIZI_SERVIZI" Association="Self.FK_GRUPPO_SERVIZI_SERVIZI">
+      <End Role="SERVIZI" EntitySet="SERVIZI" />
+      <End Role="GRUPPO_SERVIZI" EntitySet="GRUPPO_SERVIZI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MENU_PROFILO_MENU" Association="Self.FK_MENU_PROFILO_MENU">
+      <End Role="MENU" EntitySet="MENU" />
+      <End Role="MENU_PROFILO" EntitySet="MENU_PROFILO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MENU_PROFILO_PROFILE" Association="Self.FK_MENU_PROFILO_PROFILE">
+      <End Role="PROFILE" EntitySet="PROFILE" />
+      <End Role="MENU_PROFILO" EntitySet="MENU_PROFILO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SERVIZI_USERS" Association="Self.FK_SERVIZI_USERS">
+      <End Role="USERS" EntitySet="USERS" />
+      <End Role="SERVIZI" EntitySet="SERVIZI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USER_LANGUAGE" Association="Self.FK_USER_LANGUAGE">
+      <End Role="LANGUAGE" EntitySet="LANGUAGE" />
+      <End Role="USERS" EntitySet="USERS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USER_PROFILE" Association="Self.FK_USER_PROFILE">
+      <End Role="PROFILE" EntitySet="PROFILE" />
+      <End Role="USERS" EntitySet="USERS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

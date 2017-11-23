@@ -1,0 +1,14 @@
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\NLog.config
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\Core.dll.config
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\Core.dll
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\Core.pdb
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\EntityFramework.dll
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\NLog.dll
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\EntityFramework.xml
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\bin\Debug\NLog.xml
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\obj\Debug\Core.dll
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\Persistence\obj\Debug\Core.pdb

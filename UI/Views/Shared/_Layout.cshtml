@@ -1,0 +1,478 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+
+    <!-- Title -->
+    <title>@ViewBag.Title - Andrea Repaci</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="~/Assets/vendor/bootstrap/bootstrap.min.css">
+    <!-- CSS Global Icons -->
+    <link rel="stylesheet" href="~/Assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="~/Assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="~/Assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="~/Assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="~/Assets/vendor/dzsparallaxer/dzsparallaxer.scss">
+    <link rel="stylesheet" href="~/Assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="~/Assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="~/Assets/vendor/animate.css">
+    <link rel="stylesheet" href="~/Assets/vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="~/Assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="~/Assets/vendor/typedjs/typed.css">
+    <link rel="stylesheet" href="~/Assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="~/Assets/vendor/hamburgers/hamburgers.min.css">
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="~/Assets/css/unify-core.css">
+    <link rel="stylesheet" href="~/Assets/css/unify-components.css">
+    <link rel="stylesheet" href="~/Assets/css/unify-globals.css">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="~/Assets/css/custom.css">
+</head>
+
+<body>
+
+    <main>
+
+
+        <!-- Header -->
+        <header id="js-header" class="u-header u-header--static">
+            <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+                <nav class="js-mega-menu navbar navbar-expand-lg">
+                    <div class="container">
+                        <!-- Responsive Toggle Button -->
+                        <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                            <span class="hamburger hamburger--slider">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+                        <!-- Logo -->
+                        <a href="~/index.html" class="navbar-brand">
+                            <img src="~/assets/img/cs.png" alt="Image Description">
+                        </a>
+                        <!-- End Logo -->
+                        <!-- Navigation -->
+                        <!-- Navigation -->
+                        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+                            <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+
+                                <!-- Home -->
+                                @if (ViewBag.ActiveMenu == "Home")
+                                {
+                                    <li id="Menu" class="nav-item active g-mx-10--lg g-mx-15--xl">
+                                        @Html.ActionLink(
+                                        "Homepage",
+                                        "Index",
+                                        "",
+                                        null,
+                                        new { @class = "nav-link g-py-7 g-px-0" }
+                                        )
+
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                        @Html.ActionLink(
+                                        "Homepage",
+                                        "Index",
+                                        "",
+                                        null,
+                                        new { @class = "nav-link g-py-7 g-px-0" }
+                                        )
+
+                                    </li>
+                                }
+
+                                <!-- End Home -->
+                                <!-- CV -->
+                                @if (ViewBag.ActiveMenu == "CV")
+                                {
+                                    <li class="nav-item active g-mx-10--lg g-mx-15--xl">
+                                        @Html.ActionLink(
+                                        "Curriculum Vitae",
+                                        "Index",
+                                        "CurriculumVitae",
+                                        null,
+                                        new { @class = "nav-link g-py-7 g-px-0" }
+                                        )
+                                    </li>
+
+                                }
+                                else
+                                {
+                                    <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                        @Html.ActionLink(
+                                        "Curriculum Vitae",
+                                        "Index",
+                                        "CurriculumVitae",
+                                        null,
+                                        new { @class = "nav-link g-py-7 g-px-0" }
+                                        )
+                                    </li>
+                                }
+
+
+                                <!-- End Pages -->
+                                <!-- Blog -->
+                                @if (ViewBag.ActiveMenu == "Blog")
+                                {
+                                    <li class="nav-item active g-mx-10--lg g-mx-15--xl">
+                                        @Html.ActionLink(
+                                        "Blog",
+                                        "Index",
+                                        "Blog",
+                                        null,
+                                        new { @class = "nav-link g-py-7 g-px-0" }
+                                        )
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                                        @Html.ActionLink(
+                                        "Blog",
+                                        "Index",
+                                        "Blog",
+                                        null,
+                                        new { @class = "nav-link g-py-7 g-px-0" }
+                                        )
+                                    </li>
+                                }
+
+                                <!-- End Blog -->
+                                <!-- Gallery -->
+
+                                @if (ViewBag.ActiveMenu == "Gallery")
+                                {
+                                    <li class="nav-item active hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                                        <a id="nav-link--features" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features">Gallery</a>
+                                        <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-21 g-mt-11--lg--scrolling" id="nav-submenu--features" aria-labelledby="nav-link--features">
+
+
+                                            @for (int i = DateTime.Now.Year + 1; i-- > 2005;)
+                                            {
+                                                int anno = i;
+                                            <!-- Features - Headers -->
+                                                <li id="@anno" class="dropdown-item ">
+                                                    @Html.ActionLink(
+                                                    "Le mie foto",
+                                                    "Index",
+                                                    "Gallery",
+                                                    new { id = anno },
+                                                    new { @class = "nav-link" }
+                                                    )
+                                                </li>
+
+                                            }
+
+                                        </ul>
+                                    </li>
+
+                                }
+                                else
+                                {
+                                    <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                                        <a id="nav-link--features" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features">Gallery</a>
+                                        <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-21 g-mt-11--lg--scrolling" id="nav-submenu--features" aria-labelledby="nav-link--features">
+
+
+                                            @for (int i = DateTime.Now.Year + 1; i-- > 2005;)
+                                            {
+                                                int anno = i;
+                                            <!-- Features - Headers -->
+                                                <li id="@anno" class="dropdown-item ">
+                                                    @Html.ActionLink(
+                                                    anno.ToString(),
+                                                    "Index",
+                                                    "Gallery",
+                                                    new { id = anno },
+                                                    new { @class = "nav-link" }
+                                                    )
+                                                </li>
+
+                                            }
+
+                                        </ul>
+                                    </li>
+                                }
+
+
+                                <!-- End Features -->
+                                <!-- Shortcodes -->
+                                <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                                    @Html.ActionLink(
+                                                    "Contatti",
+                                                    "Index",
+                                                    "Contatti",
+                                                    null,
+                                                    new { @class = "nav-link g-py-7 g-px-0" }
+                                                    )
+                                </li>
+                                <!-- End Shortcodes -->
+                                <!-- Admin -->
+                                <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                                    @Html.ActionLink(
+                                                    "Dashboard",
+                                                    "Index",
+                                                    "Admin",
+                                                    null,
+                                                    new { @class = "nav-link g-py-7 g-px-0" }
+                                                    )
+                                </li>
+                                <!-- End Admin -->
+
+
+                                @if (ViewBag.Language == null)
+                                {
+                                    <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                                        <a id="nav-link--language" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--language">Lingua</a>
+                                        <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-21 g-mt-11--lg--scrolling" id="nav-submenu--language" aria-labelledby="nav-link--language">
+                                            <li id="ItaLan" class="dropdown-item ">
+                                                @{
+                                                    string action = ViewBag.Action;
+                                                    string controller = ViewBag.Controller;
+
+
+
+                                                    @Html.ActionLink(
+                                                    "Italiano",
+                                                    action,
+                                                    controller,
+                                                    null,
+                                                    new { @class = "nav-link" }
+                                                    )
+                                                }
+
+
+
+                                            </li>
+                                            <li id="ItaLan" class="dropdown-item ">
+
+                                                @{
+                                                    action = ViewBag.Action;
+                                                    controller = ViewBag.Controller;
+
+
+
+                                                    @Html.ActionLink(
+                                                    "Inglese",
+                                                    action,
+                                                    controller,
+                                                    null,
+                                                    new { @class = "nav-link" }
+                                                    )
+                                                }
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                 }
+                                 else
+                                 {
+                                     if (ViewBag.Language == "ITA")
+                                     {
+                                                            <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                                                                <a id="nav-link--language" class="nav-link g-py-7 g-px-0" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--language">Lingua</a>
+                                                                <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-21 g-mt-11--lg--scrolling" id="nav-submenu--language" aria-labelledby="nav-link--language">
+                                                                    <li id="ItaLan" class="dropdown-item ">
+                                                                        @{
+                                                            string action = ViewBag.Action;
+                                                            string controller = ViewBag.Controller;
+
+
+
+                                                                            @Html.ActionLink(
+                                                                            "Italiano",
+                                                                            action,
+                                                                            controller,
+                                                                            null,
+                                                                            new { @class = "nav-link" }
+                                                                            )
+                                                                        }
+                                                                    </li>
+                                                                    <li id="ItaLan" class="dropdown-item ">
+                                                                        @{
+                                                            action = ViewBag.Action;
+                                                            controller = ViewBag.Controller;
+
+
+
+                                                                            @Html.ActionLink(
+                                                                            "Inglese",
+                                                                            action,
+                                                                            controller,
+                                                                            null,
+                                                                            new { @class = "nav-link" }
+                                                                            )
+                                                                        }
+
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                            }
+                                            else
+                                            {
+                                                                                <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                                                                                    <a id="nav-link--language" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--language">Language</a>
+                                                                                    <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-21 g-mt-11--lg--scrolling" id="nav-submenu--language" aria-labelledby="nav-link--language">
+                                                                                        <li id="ItaLan" class="dropdown-item ">
+                                                                                            @{
+                                                            string action = ViewBag.Action;
+                                                            string controller = ViewBag.Controller;
+
+                                                                                                @Html.ActionLink(
+                                                                            "Italian",
+                                                                            action,
+                                                                            controller,
+                                                                            null,
+                                                                            new { @class = "nav-link" }
+                                                                            )
+                                                                                            }
+                                                                                        </li>
+                                                                                        <li id="ItaLan" class="dropdown-item ">
+                                                                                            @{
+                                                                action = ViewBag.Action;
+                                                                controller = ViewBag.Controller;
+
+
+
+                                                                                                @Html.ActionLink(
+                                                                            "English",
+                                                                            action,
+                                                                            controller,
+                                                                            null,
+                                                                            new { @class = "nav-link" }
+                                                                            )
+                                                                                            }
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                             }
+                                      }
+
+
+                            </ul>
+                        </div>
+                        <!-- End Navigation -->
+                        <div class="d-inline-block g-hidden-xs-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
+                            <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="~/Assets/CV Europass Andrea Repaci ITA.pdf" target="_blank">CV ITA</a>
+                        </div>
+                        <div class="d-inline-block g-hidden-xs-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
+                            <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="~/Assets/CV Europass Andrea Repaci ENG.pdf" target="_blank">CV ENG</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+       
+       
+        @RenderBody()
+        <hr />
+        @{Html.RenderPartial("_Footer");}
+
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+    </main>
+    <div class="u-outer-spaces-helper"></div>
+
+    <!-- JS Global Compulsory -->
+    <script src="~/Assets/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="~/Assets/vendor/jquery.easing/js/jquery.easing.js"></script>
+    <script src="~/Assets/vendor/popper.min.js"></script>
+    <script src="~/Assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="~/Assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="~/Assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="~/Assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    <script src="~/Assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+    <script src="~/Assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="~/Assets/vendor/slick-carousel/slick/slick.js"></script>
+    <script src="~/Assets/vendor/typedjs/typed.min.js"></script>
+    <!-- JS Unify -->
+    <script src="~/Assets/js/hs.core.js"></script>
+    <script src="~/Assets/js/components/hs.header.js"></script>
+    <script src="~/Assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="~/Assets/js/components/hs.tabs.js"></script>
+    <script src="~/Assets/js/components/hs.popup.js"></script>
+    <script src="~/Assets/js/components/hs.carousel.js"></script>
+    <script src="~/Assets/js/components/text-animation/hs.text-slideshow.js"></script>
+    <script src="~/Assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Customization -->
+    <script src="~/assets/js/custom.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of popups
+            $.HSCore.components.HSPopup.init('.js-fancybox');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            // initialization of text animation (typing)
+            $(".u-text-animation.u-text-animation--typing").typed({
+                strings: [
+                    "an awesome template",
+                    "perfect template",
+                    "just like a boss"
+                ],
+                typeSpeed: 60,
+                loop: true,
+                backDelay: 1500
+            });
+        });
+
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+
+</body>
+
+
+</html>

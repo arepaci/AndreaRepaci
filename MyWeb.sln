@@ -1,0 +1,159 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MvcUI", "MvcUI", "{23F8EFEB-CB3B-4625-BF19-BBCDD6E674BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{269E94AA-F256-40AD-AF55-C5991CF35B31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7CFFDB4F-EC12-4D00-8ABC-2B0F2F1B307A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Storage", "Storage", "{ED941B3D-4BD6-4ED6-981A-FB94D4B552AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Persistence\Core.csproj", "{6A2E1760-B655-4778-8A79-02CE6F1DA0BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{C6F04259-3726-4350-A1C7-D8F41F5CD23C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{414E2559-703B-437A-8E36-D60E7C1F661B} = {414E2559-703B-437A-8E36-D60E7C1F661B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudStorage", "CloudStorage\CloudStorage.csproj", "{3D100D73-9A3D-4AB4-978D-FDDD2BB8595B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{9A7791F9-F93F-4E0E-AD89-0328BD4E3D07}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite", "WebSite", "{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52313"
+		Debug.AspNetCompiler.PhysicalPath = "WebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52313\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52313"
+		Release.AspNetCompiler.PhysicalPath = "WebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52313\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52313"
+		SlnRelativePath = "WebSite\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFData", "WCFData\WCFData.csproj", "{414E2559-703B-437A-8E36-D60E7C1F661B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Checks", "0 Checks", "{30F19E40-64C7-4A11-838B-CBCE904B2BCC}"
+	ProjectSection(SolutionItems) = preProject
+		0 Checks\attuale.html = 0 Checks\attuale.html
+		0 Checks\test.html = 0 Checks\test.html
+		TextFile2.txt = TextFile2.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ispinia MVC5", "Ispinia MVC5", "{CE544E7E-5D9A-4BC8-BC8B-B58C590751E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspinia_MVC5", "Ispinia MVC5\Inspinia_MVC5\Inspinia_MVC5.csproj", "{A5859E0E-3C08-4045-B8DC-B3FB13655B00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{2827A0C1-4A54-4B09-829E-939B9E47B6E5}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll = packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll
+		packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll = packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll
+		packages\WebGrease.1.6.0\lib\WebGrease.dll = packages\WebGrease.1.6.0\lib\WebGrease.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Antlr3_3.4", "Antlr3_3.4", "{E143273B-A651-4FD6-8D94-4CCD036582FC}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll = packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Antlr3_3.5", "Antlr3_3.5", "{21EF9C21-A88F-40D8-BBDE-819F0336B5B7}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll = packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A2E1760-B655-4778-8A79-02CE6F1DA0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2E1760-B655-4778-8A79-02CE6F1DA0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2E1760-B655-4778-8A79-02CE6F1DA0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2E1760-B655-4778-8A79-02CE6F1DA0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F04259-3726-4350-A1C7-D8F41F5CD23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F04259-3726-4350-A1C7-D8F41F5CD23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F04259-3726-4350-A1C7-D8F41F5CD23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F04259-3726-4350-A1C7-D8F41F5CD23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D100D73-9A3D-4AB4-978D-FDDD2BB8595B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D100D73-9A3D-4AB4-978D-FDDD2BB8595B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D100D73-9A3D-4AB4-978D-FDDD2BB8595B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D100D73-9A3D-4AB4-978D-FDDD2BB8595B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{414E2559-703B-437A-8E36-D60E7C1F661B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414E2559-703B-437A-8E36-D60E7C1F661B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414E2559-703B-437A-8E36-D60E7C1F661B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414E2559-703B-437A-8E36-D60E7C1F661B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5859E0E-3C08-4045-B8DC-B3FB13655B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5859E0E-3C08-4045-B8DC-B3FB13655B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5859E0E-3C08-4045-B8DC-B3FB13655B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5859E0E-3C08-4045-B8DC-B3FB13655B00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A2E1760-B655-4778-8A79-02CE6F1DA0BF} = {7CFFDB4F-EC12-4D00-8ABC-2B0F2F1B307A}
+		{C6F04259-3726-4350-A1C7-D8F41F5CD23C} = {23F8EFEB-CB3B-4625-BF19-BBCDD6E674BB}
+		{3D100D73-9A3D-4AB4-978D-FDDD2BB8595B} = {ED941B3D-4BD6-4ED6-981A-FB94D4B552AF}
+		{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9} = {9A7791F9-F93F-4E0E-AD89-0328BD4E3D07}
+		{414E2559-703B-437A-8E36-D60E7C1F661B} = {269E94AA-F256-40AD-AF55-C5991CF35B31}
+		{A5859E0E-3C08-4045-B8DC-B3FB13655B00} = {CE544E7E-5D9A-4BC8-BC8B-B58C590751E9}
+		{E143273B-A651-4FD6-8D94-4CCD036582FC} = {2827A0C1-4A54-4B09-829E-939B9E47B6E5}
+		{21EF9C21-A88F-40D8-BBDE-819F0336B5B7} = {2827A0C1-4A54-4B09-829E-939B9E47B6E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F555098-B277-44F1-B994-55EE76B6F340}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://pulsar762002.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UI\\UI.csproj
+		SccProjectTopLevelParentUniqueName1 = MyWeb.sln
+		SccProjectName1 = UI
+		SccLocalPath1 = UI
+		SccProjectUniqueName2 = CloudStorage\\CloudStorage.csproj
+		SccProjectTopLevelParentUniqueName2 = MyWeb.sln
+		SccProjectName2 = CloudStorage
+		SccLocalPath2 = CloudStorage
+		SccProjectUniqueName3 = Persistence\\Core.csproj
+		SccProjectTopLevelParentUniqueName3 = MyWeb.sln
+		SccProjectName3 = Persistence
+		SccLocalPath3 = Persistence
+		SccProjectUniqueName4 = WCFData\\WCFData.csproj
+		SccProjectTopLevelParentUniqueName4 = MyWeb.sln
+		SccProjectName4 = WCFData
+		SccLocalPath4 = WCFData
+		SccProjectUniqueName5 = Ispinia\u0020MVC5\\Inspinia_MVC5\\Inspinia_MVC5.csproj
+		SccProjectTopLevelParentUniqueName5 = MyWeb.sln
+		SccProjectName5 = Ispinia\u0020MVC5/Inspinia_MVC5
+		SccLocalPath5 = Ispinia\u0020MVC5\\Inspinia_MVC5
+		SccWebProject6 = true
+		SccProjectUniqueName6 = WebSite
+		SccProjectTopLevelParentUniqueName6 = MyWeb.sln
+		SccProjectName6 = WebSite
+		SccLocalPath6 = WebSite
+		SccProjectEnlistmentChoice6 = 2
+	EndGlobalSection
+EndGlobal

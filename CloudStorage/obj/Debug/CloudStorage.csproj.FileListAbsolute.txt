@@ -1,0 +1,6 @@
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\bin\Debug\CloudStorage.dll
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\bin\Debug\CloudStorage.pdb
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\obj\Debug\CloudStorage.csprojResolveAssemblyReference.cache
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\obj\Debug\CloudStorage.csproj.CoreCompileInputs.cache
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\obj\Debug\CloudStorage.dll
+C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\obj\Debug\CloudStorage.pdb

@@ -1,0 +1,826 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Homepage";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Andrea Repaci | @ViewBag.Title</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Add jQuery Style direct - used for jQGrid plugin -->
+    <link href="@Url.Content("~/Scripts/plugins/jquery-ui/jquery-ui.min.css")" rel="stylesheet" type="text/css" />
+
+    <!-- Primary Inspinia style -->
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/font-awesome/css")
+
+</head>
+
+<body id="page-top" class="landing-page">
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="@Url.Action("Dashboard_1", "Dashboards")">Blog</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#page-top">Home</a></li>
+                        <li><a class="page-scroll" href="#cv">Curriculum Vitae</a></li>
+                        <li><a class="page-scroll" href="#customer">Clienti</a></li>
+                        <li><a class="page-scroll" href="#team">Galleria Fotografica</a></li>
+                        <li><a class="page-scroll" href="#contact">Contatti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#inSlider" data-slide-to="1"></li>
+            <li data-target="#inSlider" data-slide-to="2"></li>
+            <li data-target="#inSlider" data-slide-to="3"></li>
+            <li data-target="#inSlider" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+
+            @*Primo Item del Carosel*@
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>
+                            Benvenuti<br />
+                            a tutti<br />
+                            Gli internauti
+                        </h1>
+                        <p>
+                            Accomodatevi,<br />
+                            centellinate una tisana<br />
+                            e scoprite chi sono...
+                        </p>
+                    </div>
+                    <div class="carousel-image wow zoomIn">
+                        <img src="~/Images/landing/1.jpg" alt="me" />
+                    </div>
+                </div>
+                <!-- Set background for slide in css -->
+                <div class="header-back one"></div>
+            </div>
+
+            @*Secondo Item del Carosel*@
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>
+                            Cosmologo<br />
+                            ed astrofilo<br />
+                            per formazione
+                        </h1>
+                        <p>
+                            Gallerie fotografiche,<br />
+                            le migliori immaigni di Hubble<br />
+                            e tante altre curiosità
+                        </p>
+                    </div>
+                    <div class="carousel-image wow zoomIn">
+                        <img src="~/Images/landing/Cosmosmall.jpg" alt="me" />
+                    </div>
+                </div>
+                <!-- Set background for slide in css -->
+                <div class="header-back two"></div>
+            </div>
+
+            @*Terzo Item del Carosel*@
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>
+                            Software engineer<br />
+                            ed It Architect <br />
+                            per professione
+                        </h1>
+                        <p>
+                            Le mie esperienze professionali:<br />
+                            Fortran, C++, Action Script, Php, Java, VB.NET e C#<br />
+                            per giungere alla progettazione e gestione di architetture<br />
+                            Cloud Azure ed On-Premises nel mondo Microsoft
+                        </p>
+                    </div>
+                    <div class="carousel-image wow zoomIn">
+                        <img src="~/Images/landing/azure-postersmall.jpg" alt="me" />
+                    </div>
+                </div>
+                <!-- Set background for slide in css -->
+                <div class="header-back two"></div>
+            </div>
+
+            @*Quarto Item del Carosel*@
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>
+                            Sviluppatore C#<br />
+                            per professione
+                        </h1>
+                        <p>
+                            Cesellare e sviluppare applicazioni.<br />
+                            Testare nuovi framework e tecnologie<br />
+                            Studiare, studiare, studiare....
+                        </p>
+                    </div>
+                    <div class="carousel-image wow zoomIn">
+                        <img src="~/Images/landing/maxresdefaultsmall.jpg" alt="me" />
+                    </div>
+                </div>
+                <!-- Set background for slide in css -->
+                <div class="header-back two"></div>
+            </div>
+
+            @*Quinto Item del Carosel*@
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>
+                            Fotografo<br />
+                            per devozione
+                        </h1>
+                        <p>
+                            La foptografia per me consiste nell'afferrare quel<br />
+                            dato momento, quella particolare impressione,<br />
+                            quel moto dell'anima altrimenti inesprimibile.
+                        </p>
+                    </div>
+                    <div class="carousel-image wow zoomIn">
+                        <img src="~/Images/landing/foto.jpg" alt="me" />
+                    </div>
+                </div>
+                <!-- Set background for slide in css -->
+                <div class="header-back two"></div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <section id="cv" class="container services">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2>Eurosort</h2>
+                <p>Dal primo di Ottobre 2017 ho intrapreso la mia nuova avventura professionale in Olanda presso una delle aziende leader del mercato nel settore del sorting...</p>
+                <p><a class="navy-link" href="#Eurosort" role="button">Dettagli &raquo;</a></p>
+            </div>
+            <div class="col-sm-3">
+                <h2>Fincons SPA</h2>
+                <p>Un'azienda estremamente competitva e sfidante che negli ultimi anni è cresciuta fino a raggiungere la posizione di competitor nei confronti dei più grandi gruppi IT italiani</p>
+                <p><a class="navy-link" href="#Fincons" role="button">Dettagli &raquo;</a></p>
+            </div>
+            <div class="col-sm-3">
+                <h2>Pradac</h2>
+                <p>Un'azienda snella ed ambiziosa che si distingueva per la propria doppia specializzazione: consulenza IT di eevato spessore e software house.</p>
+                <p><a class="navy-link" href="#Pradac" role="button">Dettagli &raquo;</a></p>
+            </div>
+            <div class="col-sm-3">
+                <h2>Exprivia</h2>
+                <p>La mia prima azienda! Exprivia costituisce una delle più importanti realtà nazionali mell'ambito dell'IT in Italia.</p>
+                <p><a class="navy-link" href="#Exprivia" role="button">Dettagli &raquo;</a></p>
+            </div>
+            @*<div class="col-sm-3">
+                    <h2>Exprivia</h2>
+                    <p>La mia prima azienda! Exprivia costituisce una delle più importanti realtà nazionali mell'ambito dell'IT in Italia.</p>
+                    <p><a class="navy-link" href="#" role="button">Dettagli &raquo;</a></p>
+                </div>*@
+        </div>
+    </section>
+
+    <section id="Eurosort" class="container features">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>EUROSORT<br /> <span class="navy">Sorter Leader in Olanda</span> </h1>
+                <p>Impiegato con la qualifica di Software Engineer.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center wow fadeInLeft">
+                <div>
+                    <i class="fa fa-cubes features-icon"></i>
+                    <h2>Sorter-hardware</h2>
+                    <p>L'azienda è leader in Olanda ed esportatrice el mondo del proprio macchinario di sorting.</p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-microchip features-icon"></i>
+                    <h2>PLC customizatiopn</h2>
+                    <p>Eurosort progetta ed assembla i componenti del sorter customizzando interamente la logica PLC di interscambio delle informazioni tra i propri componenti e quelli di terze parti.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center  wow zoomIn">
+                <a href="http://www.eurosort.com/index.html" target="_blank">
+                    <img src="~/Images/landing/eusosort.png" alt="dashboard" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-3 text-center wow fadeInRight">
+                <div>
+                    <i class="fa fa-cogs features-icon"></i>
+                    <h2>Desktop Managemet Software</h2>
+                    <p>Ogni azione, evento e richiesta del cliente viene sviluppato e gestito tramite le varie componenti desktop che hanno il compito di automatizzare e parallelizzare la lavorazione degli ordini.</p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-university features-icon"></i>
+                    <h2>Settore Commerciale</h2>
+                    <p>I nostri commerciali sono pronti ad acquisire le vostre richieste funzionare per proporre la migliore soluzione tecnologia per la vostra azienda</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Fincons" class="container features">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+
+                <h1>Fincons<br /> <span class="navy">Consulenza IT di alto profilo</span> </h1>
+
+                <p>Impiegato con la qualifica di Team Leader.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center wow fadeInLeft">
+                <div>
+                    <i class="fa fa-th-list features-icon"></i>
+                    <h2>Soluzioni Sharepoint</h2>
+                    <p>Personalizzazione e customizzazione di soluzioni SharePoint sviluppate per importanti enti istituzionali in Italia </p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-cloud features-icon"></i>
+                    <h2>Cloud Azure</h2>
+                    <p>Fincons, come prima azienda in Italia, ha curato la prima Azure Farm per Poste Italiane nonchè la prima Azure Cloud application basata su metodologia Actor Model su Service Fabric</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center  wow zoomIn">
+                <a href="http://www.finconsgroup.com/" target="_blank">
+                    <img src="~/Images/landing/fincons.png" alt="dashboard" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-3 text-center wow fadeInRight">
+                <div>
+                    <i class="fa fa-spinner features-icon"></i>
+                    <h2>SAP</h2>
+                    <p>Gestione e sviluppo di soluzioni SAP dedicate alla gestione aziendale per importanti aziende italiane.</p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-gears features-icon"></i>
+                    <h2>Java</h2>
+                    <p>Sviluppo e progettazione di architetture java di complessità enterprise.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Pradac" class="container features">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Pradac<br /> <span class="navy">Sorter Leader in Olanda</span> </h1>
+                <p>Impiegato con la qualifica di Software Architect. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center wow fadeInLeft">
+                <div>
+                    <i class="fa fa-mobile features-icon"></i>
+                    <h2>Full responsive</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-bar-chart features-icon"></i>
+                    <h2>6 Charts Library</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center  wow zoomIn">
+                <img src="~/Images/landing/pradac.it.png" alt="dashboard" class="img-responsive">
+            </div>
+            <div class="col-md-3 text-center wow fadeInRight">
+                <div>
+                    <i class="fa fa-envelope features-icon"></i>
+                    <h2>Mail pages</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-google features-icon"></i>
+                    <h2>AngularJS version</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Exprivia" class="container features">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Exprivia<br /> <span class="navy">Sorter Leader in Olanda</span> </h1>
+                <p>Impiegato conla qualifica di Sviluppatore .NET. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center wow fadeInLeft">
+                <div>
+                    <i class="fa fa-mobile features-icon"></i>
+                    <h2>Full responsive</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-bar-chart features-icon"></i>
+                    <h2>6 Charts Library</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center  wow zoomIn">
+                <a href="http://www.exprivia.it/it/" target="_blank">
+                    <img src="~/Images/landing/exprivia.png" alt="dashboard" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-3 text-center wow fadeInRight">
+                <div>
+                    <i class="fa fa-envelope features-icon"></i>
+                    <h2>Mail pages</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                </div>
+                <div class="m-t-lg">
+                    <i class="fa fa-google features-icon"></i>
+                    <h2>AngularJS version</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="customer" class="container services">
+
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="http://www.eurosort.com/index.html" target="_blank">  <img src="~/Images/landing/logo_eurosort.png" /> </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.poste.it/" target="_blank"> <img src="~/Images/landing/PosteItaliane.png" /> </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://www.trenitalia.com/" target="_blank"> <img src="~/Images/landing/Trenitalia_small.png" /> </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://www.terna.it/" target="_blank">  <img src="~/Images/landing/terna_small.png" /> </a>
+            </div>
+            @*<div class="col-sm-3">
+                    <h2>Exprivia</h2>
+                    <p>La mia prima azienda! Exprivia costituisce una delle più importanti realtà nazionali mell'ambito dell'IT in Italia.</p>
+                    <p><a class="navy-link" href="#" role="button">Dettagli &raquo;</a></p>
+                </div>*@
+        </div>
+    </section>
+    <section id="customer2" class="container services">
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="#"> <img src="~/Images/landing/tfs.png" /> </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://www.avalon-instruments.com/" target="_blank"> <img src="~/Images/landing/logo-avalon_ok-2.png" /> </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://www.almaviva.it/IT/Pagine/default.aspx" target="_blank"> <img src="~/Images/landing/Untitled-1.png" /> </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.tim.it/" target="_blank"> <img src="~/Images/landing/Telecom-italia-small.png" /> </a>
+            </div>
+            @*<div class="col-sm-3">
+                    <h2>Exprivia</h2>
+                    <p>La mia prima azienda! Exprivia costituisce una delle più importanti realtà nazionali mell'ambito dell'IT in Italia.</p>
+                    <p><a class="navy-link" href="#" role="button">Dettagli &raquo;</a></p>
+                </div>*@
+        </div>
+    </section>
+
+
+    <section id="team" class="gray-section team">
+        <div class="container">
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Our Team</h1>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 wow fadeInLeft">
+                    <div class="team-member">
+                        <img src="~/Images/landing/avatar3.jpg" class="img-responsive img-circle img-small" alt="">
+                        <h4><span class="navy">Amelia</span> Smith</h4>
+                        <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus. </p>
+                        <ul class="list-inline social-icon">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member wow zoomIn">
+                        <img src="~/Images/landing/avatar1.jpg" class="img-responsive img-circle" alt="">
+                        <h4><span class="navy">John</span> Novak</h4>
+                        <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
+                        <ul class="list-inline social-icon">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow fadeInRight">
+                    <div class="team-member">
+                        <img src="~/Images/landing/avatar2.jpg" class="img-responsive img-circle img-small" alt="">
+                        <h4><span class="navy">Peter</span> Johnson</h4>
+                        <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
+                        <ul class="list-inline social-icon">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Even more great feautres</h1>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+                </div>
+            </div>
+            <div class="row features-block">
+                <div class="col-lg-3 features-text wow fadeInLeft">
+                    <small>INSPINIA</small>
+                    <h2>Perfectly designed </h2>
+                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
+                    <a href="" class="btn btn-primary">Learn more</a>
+                </div>
+                <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
+                    <img src="~/Images/landing/iphone.jpg" class="img-responsive" alt="dashboard">
+                </div>
+                <div class="col-lg-3 features-text text-right wow fadeInRight">
+                    <small>INSPINIA</small>
+                    <h2>Perfectly designed </h2>
+                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
+                    <a href="" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="timeline gray-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Our workflow</h1>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+                </div>
+            </div>
+            <div class="row features-block">
+
+                <div class="col-lg-12">
+                    <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+                        <div class="vertical-timeline-block">
+                            <div class="vertical-timeline-icon navy-bg">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+
+                            <div class="vertical-timeline-content">
+                                <h2>Meeting</h2>
+                                <p>
+                                    Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the sale.
+                                </p>
+                                <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                                <span class="vertical-date"> Today <br /> <small>Dec 24</small> </span>
+                            </div>
+                        </div>
+
+                        <div class="vertical-timeline-block">
+                            <div class="vertical-timeline-icon navy-bg">
+                                <i class="fa fa-file-text"></i>
+                            </div>
+
+                            <div class="vertical-timeline-content">
+                                <h2>Decision</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                                <span class="vertical-date"> Tomorrow <br /> <small>Dec 26</small> </span>
+                            </div>
+                        </div>
+
+                        <div class="vertical-timeline-block">
+                            <div class="vertical-timeline-icon navy-bg">
+                                <i class="fa fa-cogs"></i>
+                            </div>
+
+                            <div class="vertical-timeline-content">
+                                <h2>Implementation</h2>
+                                <p>Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. </p>
+                                <a href="#" class="btn btn-xs btn-primary"> More info</a>
+                                <span class="vertical-date"> Monday <br /> <small>Jan 02</small> </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="comments gray-section" style="margin-top: 0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>What our partners say</h1>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada. </p>
+                </div>
+            </div>
+            <div class="row features-block">
+                <div class="col-lg-4">
+                    <div class="bubble">
+                        "Uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                    </div>
+                    <div class="comments-avatar">
+                        <a href="" class="pull-left">
+                            <img alt="image" src="~/Images/landing/avatar3.jpg">
+                        </a>
+                        <div class="media-body">
+                            <div class="commens-name">
+                                Andrew Williams
+                            </div>
+                            <small class="text-muted">Company X from California</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bubble">
+                        "Uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                    </div>
+                    <div class="comments-avatar">
+                        <a href="" class="pull-left">
+                            <img alt="image" src="~/Images/landing/avatar1.jpg">
+                        </a>
+                        <div class="media-body">
+                            <div class="commens-name">
+                                Andrew Williams
+                            </div>
+                            <small class="text-muted">Company X from California</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bubble">
+                        "Uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                    </div>
+                    <div class="comments-avatar">
+                        <a href="" class="pull-left">
+                            <img alt="image" src="~/Images/landing/avatar2.jpg">
+                        </a>
+                        <div class="media-body">
+                            <div class="commens-name">
+                                Andrew Williams
+                            </div>
+                            <small class="text-muted">Company X from California</small>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>More and more extra great feautres</h1>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 features-text">
+                    <small>INSPINIA</small>
+                    <h2>Perfectly designed </h2>
+                    <i class="fa fa-bar-chart big-icon pull-right"></i>
+                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                </div>
+                <div class="col-lg-5 features-text">
+                    <small>INSPINIA</small>
+                    <h2>Perfectly designed </h2>
+                    <i class="fa fa-bolt big-icon pull-right"></i>
+                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 features-text">
+                    <small>INSPINIA</small>
+                    <h2>Perfectly designed </h2>
+                    <i class="fa fa-clock-o big-icon pull-right"></i>
+                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                </div>
+                <div class="col-lg-5 features-text">
+                    <small>INSPINIA</small>
+                    <h2>Perfectly designed </h2>
+                    <i class="fa fa-users big-icon pull-right"></i>
+                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="gray-section contact">
+        <div class="container">
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Contattami</h1>
+                    <p>Se sei interssato alle mie skills e vuoi avere informazioni o consulenze.... sentiti libero di contattarmi</p>
+                </div>
+            </div>
+            <div class="row m-b-lg">
+                <div class="col-lg-3 col-lg-offset-3">
+                    <address>
+                        <strong><span class="navy">Andrea Repaci IT</span></strong><br />
+                        Via don Pirro Scavizzi 12<br />
+                        Roma, RM 00132<br />
+                        <abbr title="Phone">P:</abbr> (+39) 3911092778
+                    </address>
+                </div>
+                <div class="col-lg-4">
+                    <address>
+                        <strong><span class="navy">Andrea Repaci NL</span></strong><br />
+                        Ondiep-Zuidzijde 39<br />
+                        Utrecht, 3551 BX<br />
+                        <abbr title="Phone">P:</abbr> (+31) 615186764
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="mailto:arepaci@gmail.com" class="btn btn-primary">Mandami un'email</a>
+                    <p class="m-t-sm">
+                        Seguimi sui miei social
+                    </p>
+                    <ul class="list-inline social-icon">
+                        <li>
+                            <a href="https://www.flickr.com/photos/65987434@N00/" target="_blank"><i class="fa fa-flickr"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/arepaci" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/andrearepaci/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/107476893147337080091?hl=it" target="_blank"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                    <p><strong>&copy; 2015 Company Name</strong><br /> consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for main scripts render -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/plugins/slimScroll")
+    @Scripts.Render("~/plugins/wow")
+    @Scripts.Render("~/bundles/inspinia")
+
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('body').scrollspy({
+                target: '.navbar-fixed-top',
+                offset: 80
+            });
+
+            // Page scrolling feature
+            $('a.page-scroll').bind('click', function (event) {
+                var link = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(link.attr('href')).offset().top - 50
+                }, 500);
+                event.preventDefault();
+                $('#navbar').collapse('hide');
+            });
+        });
+
+        var cbpAnimatedHeader = (function () {
+            var docElem = document.documentElement,
+                header = document.querySelector('.navbar-default'),
+                didScroll = false,
+                changeHeaderOn = 200;
+            function init() {
+                window.addEventListener('scroll', function (event) {
+                    if (!didScroll) {
+                        didScroll = true;
+                        setTimeout(scrollPage, 250);
+                    }
+                }, false);
+            }
+            function scrollPage() {
+                var sy = scrollY();
+                if (sy >= changeHeaderOn) {
+                    $(header).addClass('navbar-scroll')
+                }
+                else {
+                    $(header).removeClass('navbar-scroll')
+                }
+                didScroll = false;
+            }
+            function scrollY() {
+                return window.pageYOffset || docElem.scrollTop;
+            }
+            init();
+
+        })();
+
+    </script>
+
+</body>
+</html>

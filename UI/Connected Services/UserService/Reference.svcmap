@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9eb02614-dcba-41f8-b431-7464fc6a00a9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AndreaWCF/WCFData.UserService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFData.xsd" MetadataType="Schema" ID="087e8b05-c10d-4ce4-8d35-9161ed1507a0" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFData1.xsd" MetadataType="Schema" ID="3d35e7d7-88f1-449d-93f9-4fb91ccc009b" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFData2.xsd" MetadataType="Schema" ID="f3dc2d1a-cbfd-40e4-8d6a-03bb0c54189e" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFData3.xsd" MetadataType="Schema" ID="75d4d4ce-50fb-4d7e-81fc-e9c7266a5431" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?xsd=xsd3" />
+    <MetadataFile FileName="WCFData.disco" MetadataType="Disco" ID="e0cc7f59-e98c-46ab-85a8-febcf9022246" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?disco" />
+    <MetadataFile FileName="UserService.wsdl" MetadataType="Wsdl" ID="dd26fb5d-2cd3-4865-8335-2ceed33d602d" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
