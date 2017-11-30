@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MvcUI", "MvcUI", "{23F8EFEB-CB3B-4625-BF19-BBCDD6E674BB}"
 EndProject
@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudStorage", "CloudStorag
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{9A7791F9-F93F-4E0E-AD89-0328BD4E3D07}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite", "WebSite", "{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite", "WebSite\", "{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}"
 	ProjectSection(WebsiteProperties) = preProject
 		SccProjectName = "SAK"
 		SccAuxPath = "SAK"
@@ -58,7 +58,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Checks", "0 Checks", "{30
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ispinia MVC5", "Ispinia MVC5", "{CE544E7E-5D9A-4BC8-BC8B-B58C590751E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspinia_MVC5", "Ispinia MVC5\Inspinia_MVC5\Inspinia_MVC5.csproj", "{A5859E0E-3C08-4045-B8DC-B3FB13655B00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "Ispinia MVC5\Inspinia_MVC5\UI.csproj", "{A5859E0E-3C08-4045-B8DC-B3FB13655B00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{2827A0C1-4A54-4B09-829E-939B9E47B6E5}"
 	ProjectSection(SolutionItems) = preProject
@@ -123,37 +123,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4F555098-B277-44F1-B994-55EE76B6F340}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://pulsar762002.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = UI\\UI.csproj
-		SccProjectTopLevelParentUniqueName1 = MyWeb.sln
-		SccProjectName1 = UI
-		SccLocalPath1 = UI
-		SccProjectUniqueName2 = CloudStorage\\CloudStorage.csproj
-		SccProjectTopLevelParentUniqueName2 = MyWeb.sln
-		SccProjectName2 = CloudStorage
-		SccLocalPath2 = CloudStorage
-		SccProjectUniqueName3 = Persistence\\Core.csproj
-		SccProjectTopLevelParentUniqueName3 = MyWeb.sln
-		SccProjectName3 = Persistence
-		SccLocalPath3 = Persistence
-		SccProjectUniqueName4 = WCFData\\WCFData.csproj
-		SccProjectTopLevelParentUniqueName4 = MyWeb.sln
-		SccProjectName4 = WCFData
-		SccLocalPath4 = WCFData
-		SccProjectUniqueName5 = Ispinia\u0020MVC5\\Inspinia_MVC5\\Inspinia_MVC5.csproj
-		SccProjectTopLevelParentUniqueName5 = MyWeb.sln
-		SccProjectName5 = Ispinia\u0020MVC5/Inspinia_MVC5
-		SccLocalPath5 = Ispinia\u0020MVC5\\Inspinia_MVC5
-		SccWebProject6 = true
-		SccProjectUniqueName6 = WebSite
-		SccProjectTopLevelParentUniqueName6 = MyWeb.sln
-		SccProjectName6 = WebSite
-		SccLocalPath6 = WebSite
-		SccProjectEnlistmentChoice6 = 2
 	EndGlobalSection
 EndGlobal
