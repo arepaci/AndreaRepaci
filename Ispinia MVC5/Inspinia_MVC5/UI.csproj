@@ -348,6 +348,7 @@
     <Content Include="Images\landing\maxresdefaultsmall.psd" />
     <None Include="Properties\PublishProfiles\andrearepaci - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\andrearepaci - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\AndreaRepaciWeb - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Inspinia.pubxml" />
     <Content Include="Scripts\api\typehead_collection.json" />
     <Content Include="Images\a1.jpg" />

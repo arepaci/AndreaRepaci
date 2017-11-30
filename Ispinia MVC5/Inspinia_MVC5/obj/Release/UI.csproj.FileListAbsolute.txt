@@ -30,3 +30,4 @@ C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MV
 C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Release\UI.csproj.CoreCompileInputs.cache
 C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Release\AndreaRepaciUI.dll
 C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Release\AndreaRepaciUI.pdb
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Release\UI.csprojResolveAssemblyReference.cache
