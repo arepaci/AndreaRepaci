@@ -311,6 +311,7 @@
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Images\landing\1.jpg" />
     <Content Include="Images\landing\38351778892_67399d1569_z.jpg" />
+    <Content Include="Images\landing\Advanced Level Test Analyst.png" />
     <Content Include="Images\landing\azure-poster.jpg" />
     <Content Include="Images\landing\azure-postersmall.jpg" />
     <Content Include="Images\landing\Cosmo.jpg" />
@@ -328,12 +329,16 @@
     <Content Include="Images\landing\logo_eurosort.png" />
     <Content Include="Images\landing\maxresdefault.jpg" />
     <Content Include="Images\landing\maxresdefaultsmall.jpg" />
+    <Content Include="Images\landing\MCPS.png" />
+    <Content Include="Images\landing\MCSD_ALM_Blk.png" />
+    <Content Include="Images\landing\MTA_Database_Blk.png" />
     <Content Include="Images\landing\net-development.jpg" />
     <Content Include="Images\landing\PosteItaliane.png" />
     <Content Include="Images\landing\Prada-logo-wordmark.png" />
     <Content Include="Images\landing\pradac.it.png" />
     <Content Include="Images\landing\Telecom-italia-small.png" />
     <Content Include="Images\landing\terna_small.png" />
+    <Content Include="Images\landing\Tester Foundation Level.png" />
     <Content Include="Images\landing\tfs.png" />
     <Content Include="Images\landing\Trenitalia_small.png" />
     <Content Include="Images\landing\Untitled-1.png" />
@@ -346,6 +351,7 @@
     <Content Include="Content\plugins\summernote\font\summernote.ttf" />
     <Content Include="Content\plugins\summernote\font\summernote.woff" />
     <Content Include="Images\landing\maxresdefaultsmall.psd" />
+    <Content Include="Images\landing\azure-postersmall.psd" />
     <None Include="Properties\PublishProfiles\andrearepaci - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\andrearepaci - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\AndreaRepaciWeb - Web Deploy.pubxml" />
