@@ -10,6 +10,11 @@ namespace Inspinia_MVC5.Controllers
     {
         public ActionResult Dashboard_1()
         {
+            if (Session["user"] == null)
+            {
+              return RedirectToAction("Login", "Pages");
+            }
+            
             return View();
         }
 
