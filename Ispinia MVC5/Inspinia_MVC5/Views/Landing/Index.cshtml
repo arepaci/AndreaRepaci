@@ -36,6 +36,8 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="@Url.Action("Dashboard_1", "Dashboards")">Blog</a>
+                    <a class="navbar-brand" style="margin-left:5px" href="~/Images/landing/CV-Europass-20171210-Repaci-IT.pdf" target="_blank">Scarica il CV ITA</a>
+                    <a class="navbar-brand" style="margin-left:5px" href="~/Images/landing/CV-Europass-20161109-Repaci-EN.pdf" target="_blank">Scarica il CV ENG</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -505,7 +507,7 @@
                                 <p>VSIN</p>
                                 <p>SIGIT</p>
                                 <p>SIREP</p>
-                                <a href="#FinconsCV" class="btn btn-xs btn-primary">Dettagli</a>
+                                @*<a href="#FinconsCV" class="btn btn-xs btn-primary">Dettagli</a>*@
                                 <span class="vertical-date"><br /> <small>Febbraio 2014 - Settembre 2017</small> </span>
                             </div>
                         </div>
@@ -524,8 +526,8 @@
                                 <p>Uscire</p>
                                 <p>AITN</p>
                                 <p>Avalon Instruments</p>
-                                <a href="#PradacCV" class="btn btn-xs btn-primary">Dettagli</a>
-                                <span class="vertical-date"> Monday <br /> <small>Jan 02</small> </span>
+                                @*<a href="#PradacCV" class="btn btn-xs btn-primary">Dettagli</a>*@
+                                <span class="vertical-date"> Monday <br /> <small>Giugno 2009 - Gennaio 2014</small> </span>
                             </div>
                         </div>
 
@@ -540,8 +542,8 @@
                                 <p>SAS</p>
                                 <p>Ticketless</p>
                                 <p>Software di gestione Interna</p>
-                                <a href="#ExpriviaCV" class="btn btn-xs btn-primary">Dettagli</a>
-                                <span class="vertical-date"> Monday <br /> <small>Jan 02</small> </span>
+                                @*<a href="#ExpriviaCV" class="btn btn-xs btn-primary">Dettagli</a>*@
+                                <span class="vertical-date"> Monday <br /> <small>Marzo 2004 - Maggio 2009</small> </span>
                             </div>
                         </div>
 
@@ -583,136 +585,166 @@
 
                 </div>
                 <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 features-text">
-                        <small>Svezia</small>
-                        <h2>PostNord Nassjo </h2>
-                        <i class="fa fa-envelope big-icon pull-right"></i>
-                        <p>Architettura</p>
+                    <div class="col-lg-2 col-lg-offset-1 features-text">
+                        <small>Nassjo</small>
+                        <h2>PostNord</h2>
+                        <p>Progetto di smistamento della corrispondenza per PostNord</p>
+                    </div>
+                    <div class="col-lg-3 features-text">
+                        <small>Architettura</small>
+                        <h2>Componenti Software</h2>
+                        <p>Processi Control Unit</p>
+                        <p>ESController</p>
+                        <p>ESCore</p>
+                        <p>DBNassjo</p>
+                        <p>OCR su GLP</p>
+                        <p>Camera SICK</p>
+                    </div>
+                    <div class="col-lg-3 features-text">
+                        <small>Tecnologie</small>
+                        <h2>Ambiente di produzione</h2>
+                        <p>Windows Server 2012</p>
+                        <p>SQLServer 2014</p>
+                        <p>.NET 4.6</p>
+                        <p>Protocollo di comunicazione SICK ASN1</p>
+                        <p>Comunicazione su socket tramite Telegrams</p>
+                        <p>WPF MVVM</p>
+                        <p>ADO.NET EF6</p>
+                    </div>
+                    <div class="col-lg-3 features-text">
+                        <small>Sviluppo</small>
+                        <h2>Ambiente di sviluppo</h2>
+                        <p>Visual Studio 2015</p>
+                        <p>Windows 10</p>
+                        <p>.NET 4.6</p>
+                        <p>SqlServer 2014 2016</p>
+                        <p>BitBucket</p>
+                        <p>Jira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @*<section class="features" id="FinconsCV">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>Esperienza in Fincons</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-bar-chart big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
+                    <div class="col-lg-5 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-bolt big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-clock-o big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
+                    <div class="col-lg-5 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-users big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
                     </div>
                 </div>
             </div>
 
-    </section>
+        </section>
 
-    <section class="features" id="FinconsCV">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="navy-line"></div>
-                    <h1>Esperienza in Fincons</h1>
+        <section class="features" id="PradacCV">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>Esperienza in Pradac</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-bar-chart big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
+                    <div class="col-lg-5 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-bolt big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-clock-o big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
+                    <div class="col-lg-5 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-users big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-bar-chart big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-                <div class="col-lg-5 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-bolt big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-clock-o big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-                <div class="col-lg-5 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-users big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-            </div>
-        </div>
 
-    </section>
+        </section>
 
-    <section class="features" id="PradacCV">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="navy-line"></div>
-                    <h1>Esperienza in Pradac</h1>
+        <section class="features" id="ExpriviaCV">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>Esperienza in Exprivia</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-bar-chart big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
+                    <div class="col-lg-5 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-bolt big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-clock-o big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
+                    <div class="col-lg-5 features-text">
+                        <small>INSPINIA</small>
+                        <h2>Perfectly designed </h2>
+                        <i class="fa fa-users big-icon pull-right"></i>
+                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-bar-chart big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-                <div class="col-lg-5 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-bolt big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-clock-o big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-                <div class="col-lg-5 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-users big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-            </div>
-        </div>
 
-    </section>
-
-    <section class="features" id="ExpriviaCV">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="navy-line"></div>
-                    <h1>Esperienza in Exprivia</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-bar-chart big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-                <div class="col-lg-5 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-bolt big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-clock-o big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-                <div class="col-lg-5 features-text">
-                    <small>INSPINIA</small>
-                    <h2>Perfectly designed </h2>
-                    <i class="fa fa-users big-icon pull-right"></i>
-                    <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
+        </section>*@
 
     <section id="contact" class="gray-section contact">
         <div class="container">

@@ -352,6 +352,8 @@
     <Content Include="Content\plugins\summernote\font\summernote.woff" />
     <Content Include="Images\landing\maxresdefaultsmall.psd" />
     <Content Include="Images\landing\azure-postersmall.psd" />
+    <Content Include="Images\landing\CV-Europass-20161109-Repaci-EN.pdf" />
+    <Content Include="Images\landing\CV-Europass-20171210-Repaci-IT.pdf" />
     <None Include="Properties\PublishProfiles\andrearepaci - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\andrearepaci - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\AndreaRepaciWeb - Web Deploy.pubxml" />
