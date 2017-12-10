@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Core.CustomClasses" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Core.CustomClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Core" />
+  <xs:complexType name="UserView">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="User" nillable="true" type="q1:USER" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="esito" type="q2:Utilities.Esito_Controlli" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserView" nillable="true" type="tns:UserView" />
+  <xs:complexType name="UserViewList">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="UserList" nillable="true" type="q3:ArrayOfUSER" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="esito" type="q4:Utilities.Esito_Controlli" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserViewList" nillable="true" type="tns:UserViewList" />
+  <xs:complexType name="boolView">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bEsito" type="xs:boolean" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="esito" type="q5:Utilities.Esito_Controlli" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="boolView" nillable="true" type="tns:boolView" />
+  <xs:complexType name="ProfileViewList">
+    <xs:sequence>
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="ProfileList" nillable="true" type="q6:ArrayOfPROFILE" />
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="esito" type="q7:Utilities.Esito_Controlli" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProfileViewList" nillable="true" type="tns:ProfileViewList" />
+  <xs:complexType name="ProfileView">
+    <xs:sequence>
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="Profile" nillable="true" type="q8:PROFILE" />
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="esito" type="q9:Utilities.Esito_Controlli" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProfileView" nillable="true" type="tns:ProfileView" />
+  <xs:complexType name="vServiceGroupViewList">
+    <xs:sequence>
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="esito" type="q10:Utilities.Esito_Controlli" />
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="servicegroupsList" nillable="true" type="q11:ArrayOfvServiceGroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="vServiceGroupViewList" nillable="true" type="tns:vServiceGroupViewList" />
+  <xs:complexType name="LinguaViewList">
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="esito" type="q12:Utilities.Esito_Controlli" />
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="lingue" nillable="true" type="q13:ArrayOfLANGUAGE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LinguaViewList" nillable="true" type="tns:LinguaViewList" />
+  <xs:complexType name="LinguaView">
+    <xs:sequence>
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="esito" type="q14:Utilities.Esito_Controlli" />
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="lingua" nillable="true" type="q15:LANGUAGE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LinguaView" nillable="true" type="tns:LinguaView" />
+</xs:schema>
