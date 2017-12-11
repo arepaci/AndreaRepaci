@@ -8,9 +8,11 @@ using System.ServiceModel;
 using System.Text;
 using static Core.Utilities;
 using static Core.Log;
+using System.ServiceModel.Activation;
 
 namespace WCFServiceWebRole2
 {
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     // NOTA: è possibile utilizzare il comando "Rinomina" del menu "Refactoring" per modificare il nome di classe "UserService" nel codice, nel file svc e nel file di configurazione contemporaneamente.
     // NOTA: per avviare il client di prova WCF per testare il servizio, selezionare UserService.svc o UserService.svc.cs in Esplora soluzioni e avviare il debug.
     public class UserService : IUserService, IServiceBase
@@ -333,7 +335,7 @@ namespace WCFServiceWebRole2
             return objout;
         }
 
-        public bool checkServizioAbilitato(Guid idServizio)
+        public bool checkServizioAbilitatoByID(Guid idServizio)
         {
             Core.Log.LogInfoLevel(string.Format("Called service UserService - Function checkServizioAbilitato"));
             using (var ctx = new myWebEntities())
@@ -672,6 +674,9 @@ namespace WCFServiceWebRole2
             LogInfoLevel(string.Format("Exit service UserService - Function GetProfilesByUserId for the user {0}", idUtente.ToString()));
             return bout;
         }
+
+     
+
 
         #endregion
 

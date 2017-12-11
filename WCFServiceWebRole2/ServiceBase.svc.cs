@@ -7,14 +7,16 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using static Core.Utilities;
+using System.ServiceModel.Activation;
 
 namespace WCFServiceWebRole2
 {
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     // NOTA: è possibile utilizzare il comando "Rinomina" del menu "Refactoring" per modificare il nome di classe "ServiceBase" nel codice, nel file svc e nel file di configurazione contemporaneamente.
     // NOTA: per avviare il client di prova WCF per testare il servizio, selezionare ServiceBase.svc o ServiceBase.svc.cs in Esplora soluzioni e avviare il debug.
     public class ServiceBase : IServiceBase
     {
-        public bool checkServizioAbilitato(Guid idServizio)
+        public bool checkServizioAbilitatoByID(Guid idServizio)
         {
             using (var ctx = new myWebEntities())
             {

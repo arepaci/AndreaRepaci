@@ -19,15 +19,15 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/AndreaWCF/WCFData.UserService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://andrearepaci.cloudapp.net/UserService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WCFData.xsd" MetadataType="Schema" ID="d0804ba9-0115-4629-9d77-e4495807797e" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?xsd=xsd0" />
-    <MetadataFile FileName="WCFData1.xsd" MetadataType="Schema" ID="ea6bb015-3160-4bcb-b6b2-e84fc381ed2a" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?xsd=xsd1" />
-    <MetadataFile FileName="WCFData2.xsd" MetadataType="Schema" ID="2a1f8beb-4c9b-47ad-a2b8-b4953ba34e1c" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?xsd=xsd2" />
-    <MetadataFile FileName="WCFData3.xsd" MetadataType="Schema" ID="8575462c-a94e-4101-b0d5-590b185a5aae" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?xsd=xsd3" />
-    <MetadataFile FileName="WCFData.disco" MetadataType="Disco" ID="258b20d2-024e-44ba-9946-45d6a07250a2" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?disco" />
-    <MetadataFile FileName="UserService.wsdl" MetadataType="Wsdl" ID="c8c471b5-cb96-4dd3-a326-1c940cd262ad" SourceId="1" SourceUrl="http://desktop-8iqh35k/AndreaWCF/WCFData.UserService.svc?wsdl" />
+    <MetadataFile FileName="UserService.xsd" MetadataType="Schema" ID="b915cf3e-cb69-477e-bc8b-6a35cf74312c" SourceId="1" SourceUrl="http://andrearepaci.cloudapp.net/UserService.svc?xsd=xsd2" />
+    <MetadataFile FileName="UserService.disco" MetadataType="Disco" ID="34992604-9372-48df-a373-0cad461a9720" SourceId="1" SourceUrl="http://andrearepaci.cloudapp.net/UserService.svc?disco" />
+    <MetadataFile FileName="UserService1.wsdl" MetadataType="Wsdl" ID="30b712aa-8f20-46ae-916a-7902dfd6bcb3" SourceId="1" SourceUrl="http://andrearepaci.cloudapp.net/UserService.svc?wsdl" />
+    <MetadataFile FileName="UserService1.xsd" MetadataType="Schema" ID="2038eca6-2f87-4a81-ba67-92f131b49bcd" SourceId="1" SourceUrl="http://andrearepaci.cloudapp.net/UserService.svc?xsd=xsd1" />
+    <MetadataFile FileName="UserService2.xsd" MetadataType="Schema" ID="fc822fdd-6a48-4b15-9707-7e58a0461b93" SourceId="1" SourceUrl="http://andrearepaci.cloudapp.net/UserService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UserService3.xsd" MetadataType="Schema" ID="f7b07623-1741-422d-84da-e8539b40e7dc" SourceId="1" SourceUrl="http://andrearepaci.cloudapp.net/UserService.svc?xsd=xsd3" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

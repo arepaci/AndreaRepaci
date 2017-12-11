@@ -229,14 +229,16 @@
     <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.vServiceGroupViewList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\andreaService\UserService.wsdl" />
-    <None Include="Connected Services\andreaService\WCFData.disco" />
+    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.checkServizioAbilitatoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\andreaService\configuration91.svcinfo" />
     <None Include="Connected Services\andreaService\configuration.svcinfo" />
     <None Include="Connected Services\andreaService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\andreaService\UserService.disco" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -447,16 +449,17 @@
     <Content Include="Images\landing\azure-postersmall.psd" />
     <Content Include="Images\landing\CV-Europass-20161109-Repaci-EN.pdf" />
     <Content Include="Images\landing\CV-Europass-20171210-Repaci-IT.pdf" />
-    <None Include="Connected Services\andreaService\WCFData.xsd">
+    <None Include="Connected Services\andreaService\UserService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\andreaService\WCFData1.xsd">
+    <None Include="Connected Services\andreaService\UserService1.wsdl" />
+    <None Include="Connected Services\andreaService\UserService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\andreaService\WCFData2.xsd">
+    <None Include="Connected Services\andreaService\UserService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\andreaService\WCFData3.xsd">
+    <None Include="Connected Services\andreaService\UserService3.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\andrearepaci - FTP.pubxml" />

@@ -161,7 +161,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -207,7 +207,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -435,7 +435,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -509,7 +509,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -555,7 +555,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -602,7 +602,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -704,7 +704,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -751,7 +751,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -797,7 +797,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -809,6 +809,8 @@ namespace AndreaRepaciUI.andreaService {
         private string dESCRIPTIONField;
         
         private string iD_PROFILEField;
+        
+        private MENU[] mENUsField;
         
         private USER[] uSERSField;
         
@@ -850,6 +852,18 @@ namespace AndreaRepaciUI.andreaService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true, Order=3)]
+        public MENU[] MENUs {
+            get {
+                return this.mENUsField;
+            }
+            set {
+                this.mENUsField = value;
+                this.RaisePropertyChanged("MENUs");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true, Order=4)]
         public USER[] USERS {
             get {
                 return this.uSERSField;
@@ -871,7 +885,95 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/Core")]
+    public partial class MENU : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string cODEField;
+        
+        private string dESCRIPTIONField;
+        
+        private string mENU_IDField;
+        
+        private string mENU_ID_FATHERField;
+        
+        private PROFILE[] pROFILEsField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=0)]
+        public string CODE {
+            get {
+                return this.cODEField;
+            }
+            set {
+                this.cODEField = value;
+                this.RaisePropertyChanged("CODE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=1)]
+        public string DESCRIPTION {
+            get {
+                return this.dESCRIPTIONField;
+            }
+            set {
+                this.dESCRIPTIONField = value;
+                this.RaisePropertyChanged("DESCRIPTION");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public string MENU_ID {
+            get {
+                return this.mENU_IDField;
+            }
+            set {
+                this.mENU_IDField = value;
+                this.RaisePropertyChanged("MENU_ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=3)]
+        public string MENU_ID_FATHER {
+            get {
+                return this.mENU_ID_FATHERField;
+            }
+            set {
+                this.mENU_ID_FATHERField = value;
+                this.RaisePropertyChanged("MENU_ID_FATHER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true, Order=4)]
+        public PROFILE[] PROFILEs {
+            get {
+                return this.pROFILEsField;
+            }
+            set {
+                this.pROFILEsField = value;
+                this.RaisePropertyChanged("PROFILEs");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -918,7 +1020,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -978,7 +1080,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1025,7 +1127,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1085,7 +1187,7 @@ namespace AndreaRepaciUI.andreaService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2357,6 +2459,120 @@ namespace AndreaRepaciUI.andreaService {
             AndreaRepaciUI.andreaService.GetLanguagebyIdUserRequest inValue = new AndreaRepaciUI.andreaService.GetLanguagebyIdUserRequest();
             inValue.idUser = idUser;
             return ((AndreaRepaciUI.andreaService.IUserService)(this)).GetLanguagebyIdUserAsync(inValue);
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="andreaService.IServiceBase")]
+    public interface IServiceBase {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBase/checkServizioAbilitatoByID", ReplyAction="http://tempuri.org/IServiceBase/checkServizioAbilitatoByIDResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        bool checkServizioAbilitatoByID(string idServizio);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBase/checkServizioAbilitatoByID", ReplyAction="http://tempuri.org/IServiceBase/checkServizioAbilitatoByIDResponse")]
+        System.Threading.Tasks.Task<bool> checkServizioAbilitatoByIDAsync(string idServizio);
+        
+        // CODEGEN: Il parametro 'checkServizioAbilitatoResult' richiede informazioni sullo schema aggiuntive che non possono essere acquisite utilizzando la modalità parametro. L'attributo specifico è 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBase/checkServizioAbilitato", ReplyAction="http://tempuri.org/IServiceBase/checkServizioAbilitatoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        AndreaRepaciUI.andreaService.checkServizioAbilitatoResponse checkServizioAbilitato(AndreaRepaciUI.andreaService.checkServizioAbilitatoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBase/checkServizioAbilitato", ReplyAction="http://tempuri.org/IServiceBase/checkServizioAbilitatoResponse")]
+        System.Threading.Tasks.Task<AndreaRepaciUI.andreaService.checkServizioAbilitatoResponse> checkServizioAbilitatoAsync(AndreaRepaciUI.andreaService.checkServizioAbilitatoRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="checkServizioAbilitato", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class checkServizioAbilitatoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        public string Servizio;
+        
+        public checkServizioAbilitatoRequest() {
+        }
+        
+        public checkServizioAbilitatoRequest(string Servizio) {
+            this.Servizio = Servizio;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="checkServizioAbilitatoResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class checkServizioAbilitatoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public AndreaRepaciUI.andreaService.boolView checkServizioAbilitatoResult;
+        
+        public checkServizioAbilitatoResponse() {
+        }
+        
+        public checkServizioAbilitatoResponse(AndreaRepaciUI.andreaService.boolView checkServizioAbilitatoResult) {
+            this.checkServizioAbilitatoResult = checkServizioAbilitatoResult;
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IServiceBaseChannel : AndreaRepaciUI.andreaService.IServiceBase, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class ServiceBaseClient : System.ServiceModel.ClientBase<AndreaRepaciUI.andreaService.IServiceBase>, AndreaRepaciUI.andreaService.IServiceBase {
+        
+        public ServiceBaseClient() {
+        }
+        
+        public ServiceBaseClient(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public ServiceBaseClient(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public ServiceBaseClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public ServiceBaseClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        public bool checkServizioAbilitatoByID(string idServizio) {
+            return base.Channel.checkServizioAbilitatoByID(idServizio);
+        }
+        
+        public System.Threading.Tasks.Task<bool> checkServizioAbilitatoByIDAsync(string idServizio) {
+            return base.Channel.checkServizioAbilitatoByIDAsync(idServizio);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        AndreaRepaciUI.andreaService.checkServizioAbilitatoResponse AndreaRepaciUI.andreaService.IServiceBase.checkServizioAbilitato(AndreaRepaciUI.andreaService.checkServizioAbilitatoRequest request) {
+            return base.Channel.checkServizioAbilitato(request);
+        }
+        
+        public AndreaRepaciUI.andreaService.boolView checkServizioAbilitato(string Servizio) {
+            AndreaRepaciUI.andreaService.checkServizioAbilitatoRequest inValue = new AndreaRepaciUI.andreaService.checkServizioAbilitatoRequest();
+            inValue.Servizio = Servizio;
+            AndreaRepaciUI.andreaService.checkServizioAbilitatoResponse retVal = ((AndreaRepaciUI.andreaService.IServiceBase)(this)).checkServizioAbilitato(inValue);
+            return retVal.checkServizioAbilitatoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<AndreaRepaciUI.andreaService.checkServizioAbilitatoResponse> AndreaRepaciUI.andreaService.IServiceBase.checkServizioAbilitatoAsync(AndreaRepaciUI.andreaService.checkServizioAbilitatoRequest request) {
+            return base.Channel.checkServizioAbilitatoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<AndreaRepaciUI.andreaService.checkServizioAbilitatoResponse> checkServizioAbilitatoAsync(string Servizio) {
+            AndreaRepaciUI.andreaService.checkServizioAbilitatoRequest inValue = new AndreaRepaciUI.andreaService.checkServizioAbilitatoRequest();
+            inValue.Servizio = Servizio;
+            return ((AndreaRepaciUI.andreaService.IServiceBase)(this)).checkServizioAbilitatoAsync(inValue);
         }
     }
 }

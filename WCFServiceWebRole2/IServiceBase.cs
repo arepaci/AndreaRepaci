@@ -13,7 +13,7 @@ namespace WCFServiceWebRole2
     public interface IServiceBase
     {
         [OperationContract]
-        bool checkServizioAbilitato(Guid idServizio);
+        bool checkServizioAbilitatoByID(Guid idServizio);
         [OperationContract]
         boolView checkServizioAbilitato(Core.Utilities.Enum_Servizi Servizio);
     }

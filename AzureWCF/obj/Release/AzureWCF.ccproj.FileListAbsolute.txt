@@ -55,7 +55,6 @@ C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCF
 C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\bin\zh-Hant\Microsoft.Data.OData.resources.dll
 C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
 C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\Service1.svc
 C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\ServiceBase.svc
 C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\UserService.svc
 C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\Web.config
