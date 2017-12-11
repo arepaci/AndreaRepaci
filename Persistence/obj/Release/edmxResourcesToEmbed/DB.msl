@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="myWebModelStoreContainer" CdmEntityContainer="myWebEntities">
+    <EntitySetMapping Name="LANGUAGEs">
+      <EntityTypeMapping TypeName="myWebModel.LANGUAGE">
+        <MappingFragment StoreEntitySet="LANGUAGE">
+          <ScalarProperty Name="ID_LANGUAGE" ColumnName="ID_LANGUAGE" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROFILEs">
+      <EntityTypeMapping TypeName="myWebModel.PROFILE">
+        <MappingFragment StoreEntitySet="PROFILE">
+          <ScalarProperty Name="ID_PROFILE" ColumnName="ID_PROFILE" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="myWebModel.USER">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="ID_LANGUAGE" ColumnName="ID_LANGUAGE" />
+          <ScalarProperty Name="MOBILE_PHONE_NUMBER" ColumnName="MOBILE_PHONE_NUMBER" />
+          <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+          <ScalarProperty Name="IS_ENABLED" ColumnName="IS_ENABLED" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="ID_PROFILE" ColumnName="ID_PROFILE" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="SURNAME" ColumnName="SURNAME" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ID_USER" ColumnName="ID_USER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SERVIZIs">
+      <EntityTypeMapping TypeName="myWebModel.SERVIZI">
+        <MappingFragment StoreEntitySet="SERVIZI">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="ID_USER" ColumnName="ID_USER" />
+          <ScalarProperty Name="DATA_MODIFICA" ColumnName="DATA_MODIFICA" />
+          <ScalarProperty Name="DATA_CREAZIONE" ColumnName="DATA_CREAZIONE" />
+          <ScalarProperty Name="IS_ENABLED" ColumnName="IS_ENABLED" />
+          <ScalarProperty Name="FIRMA" ColumnName="FIRMA" />
+          <ScalarProperty Name="DESCRIZIONE" ColumnName="DESCRIZIONE" />
+          <ScalarProperty Name="ENDPOINT" ColumnName="ENDPOINT" />
+          <ScalarProperty Name="ID_SERVIZIO" ColumnName="ID_SERVIZIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GRUPPOes">
+      <EntityTypeMapping TypeName="myWebModel.GRUPPO">
+        <MappingFragment StoreEntitySet="GRUPPO">
+          <ScalarProperty Name="DESCRIZIONE" ColumnName="DESCRIZIONE" />
+          <ScalarProperty Name="ID_GRUPPO" ColumnName="ID_GRUPPO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vServiceGroups">
+      <EntityTypeMapping TypeName="myWebModel.vServiceGroup">
+        <MappingFragment StoreEntitySet="vServiceGroups">
+          <ScalarProperty Name="ID_GRUPPO" ColumnName="ID_GRUPPO" />
+          <ScalarProperty Name="ID_SERVIZIO" ColumnName="ID_SERVIZIO" />
+          <ScalarProperty Name="FIRMA" ColumnName="FIRMA" />
+          <ScalarProperty Name="ENDPOINT" ColumnName="ENDPOINT" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="GRUPPO_SERVIZIO" ColumnName="GRUPPO_SERVIZIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="GRUPPO_SERVIZI" TypeName="myWebModel.GRUPPO_SERVIZI" StoreEntitySet="GRUPPO_SERVIZI">
+      <EndProperty Name="SERVIZI">
+        <ScalarProperty Name="ID_SERVIZIO" ColumnName="ID_SERVIZIO" />
+      </EndProperty>
+      <EndProperty Name="GRUPPO">
+        <ScalarProperty Name="ID_GRUPPO" ColumnName="ID_GRUPPO" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="MENUs">
+      <EntityTypeMapping TypeName="myWebModel.MENU">
+        <MappingFragment StoreEntitySet="MENU">
+          <ScalarProperty Name="MENU_ID_FATHER" ColumnName="MENU_ID_FATHER" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vUserPermissions">
+      <EntityTypeMapping TypeName="myWebModel.vUserPermission">
+        <MappingFragment StoreEntitySet="vUserPermissions">
+          <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+          <ScalarProperty Name="ID_LANGUAGE" ColumnName="ID_LANGUAGE" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+          <ScalarProperty Name="MENU" ColumnName="MENU" />
+          <ScalarProperty Name="PROFILO" ColumnName="PROFILO" />
+          <ScalarProperty Name="ID_PROFILE" ColumnName="ID_PROFILE" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="ID_USER" ColumnName="ID_USER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MENU_PROFILO" TypeName="myWebModel.MENU_PROFILO" StoreEntitySet="MENU_PROFILO">
+      <EndProperty Name="PROFILE">
+        <ScalarProperty Name="ID_PROFILE" ColumnName="PROFILO_ID" />
+      </EndProperty>
+      <EndProperty Name="MENU">
+        <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

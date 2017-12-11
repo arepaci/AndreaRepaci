@@ -9,10 +9,10 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/AndreaRepaciUI.dll">
-      <publishTime>11/30/2017 20:42:52</publishTime>
+      <publishTime>12/11/2017 09:46:02</publishTime>
     </File>
     <File Include="bin/AndreaRepaciUI.pdb">
-      <publishTime>11/30/2017 20:42:52</publishTime>
+      <publishTime>12/11/2017 09:46:02</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>11/24/2017 15:29:22</publishTime>
@@ -88,6 +88,84 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
     </File>
     <File Include="CodeTemplates/MvcView/ModelMetadataFunctions.cs.include.t4">
       <publishTime>11/24/2017 15:29:06</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.AddProfileResponse.datasource">
+      <publishTime>12/10/2017 23:34:59</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.AddUsersResponse.datasource">
+      <publishTime>12/10/2017 23:34:58</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.boolView.datasource">
+      <publishTime>12/10/2017 23:34:57</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.checkLoginResponse.datasource">
+      <publishTime>12/10/2017 23:34:59</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.EnableUserResponse.datasource">
+      <publishTime>12/10/2017 23:34:58</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetLanguagebyIdResponse.datasource">
+      <publishTime>12/10/2017 23:35:00</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetLanguagebyIdUserResponse.datasource">
+      <publishTime>12/10/2017 23:35:00</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetLanguagesResponse.datasource">
+      <publishTime>12/10/2017 23:35:00</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetProfileByIdResponse.datasource">
+      <publishTime>12/10/2017 23:34:59</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetProfilesByUserIdResponse.datasource">
+      <publishTime>12/10/2017 23:34:59</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetProfilesResponse.datasource">
+      <publishTime>12/10/2017 23:34:59</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetServiceGroupsResponse.datasource">
+      <publishTime>12/10/2017 23:35:00</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetUserByIdResponse.datasource">
+      <publishTime>12/10/2017 23:34:57</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetUserResponse.datasource">
+      <publishTime>12/10/2017 23:34:57</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetUsersByLanguageResponse.datasource">
+      <publishTime>12/10/2017 23:34:58</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetUsersByProfilesResponse.datasource">
+      <publishTime>12/10/2017 23:34:58</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.GetUsersResponse.datasource">
+      <publishTime>12/10/2017 23:34:58</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.LinguaView.datasource">
+      <publishTime>12/10/2017 23:34:56</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.LinguaViewList.datasource">
+      <publishTime>12/10/2017 23:34:56</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.ProfileView.datasource">
+      <publishTime>12/10/2017 23:34:57</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.ProfileViewList.datasource">
+      <publishTime>12/10/2017 23:34:57</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.UpdateProfileResponse.datasource">
+      <publishTime>12/10/2017 23:34:59</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.UpdateUserResponse.datasource">
+      <publishTime>12/10/2017 23:34:58</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.UserView.datasource">
+      <publishTime>12/10/2017 23:34:56</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.UserViewList.datasource">
+      <publishTime>12/10/2017 23:34:57</publishTime>
+    </File>
+    <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.vServiceGroupViewList.datasource">
+      <publishTime>12/10/2017 23:34:56</publishTime>
     </File>
     <File Include="Content/animate.css">
       <publishTime>11/24/2017 15:29:06</publishTime>
@@ -3044,6 +3122,9 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
     <File Include="Images/landing/38351778892_67399d1569_z.jpg">
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
+    <File Include="Images/landing/Advanced Level Test Analyst.png">
+      <publishTime>12/01/2017 10:35:41</publishTime>
+    </File>
     <File Include="Images/landing/avatar1.jpg">
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
@@ -3077,11 +3158,20 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
     <File Include="Images/landing/azure-postersmall.jpg">
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
+    <File Include="Images/landing/azure-postersmall.psd">
+      <publishTime>11/24/2017 15:29:07</publishTime>
+    </File>
     <File Include="Images/landing/Cosmo.jpg">
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
     <File Include="Images/landing/Cosmosmall.jpg">
       <publishTime>11/24/2017 15:29:07</publishTime>
+    </File>
+    <File Include="Images/landing/CV-Europass-20161109-Repaci-EN.pdf">
+      <publishTime>11/29/2017 11:37:22</publishTime>
+    </File>
+    <File Include="Images/landing/CV-Europass-20171210-Repaci-IT.pdf">
+      <publishTime>12/10/2017 21:13:16</publishTime>
     </File>
     <File Include="Images/landing/dashboard.png">
       <publishTime>11/24/2017 15:29:07</publishTime>
@@ -3134,6 +3224,15 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
     <File Include="Images/landing/maxresdefaultsmall.psd">
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
+    <File Include="Images/landing/MCPS.png">
+      <publishTime>12/01/2017 10:34:44</publishTime>
+    </File>
+    <File Include="Images/landing/MCSD_ALM_Blk.png">
+      <publishTime>12/01/2017 10:34:18</publishTime>
+    </File>
+    <File Include="Images/landing/MTA_Database_Blk.png">
+      <publishTime>12/01/2017 10:33:42</publishTime>
+    </File>
     <File Include="Images/landing/net-development.jpg">
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
@@ -3154,6 +3253,9 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
     </File>
     <File Include="Images/landing/terna_small.png">
       <publishTime>11/24/2017 15:29:07</publishTime>
+    </File>
+    <File Include="Images/landing/Tester Foundation Level.png">
+      <publishTime>12/01/2017 10:36:00</publishTime>
     </File>
     <File Include="Images/landing/tfs.png">
       <publishTime>11/24/2017 15:29:07</publishTime>
@@ -4458,7 +4560,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
     <File Include="Views/Landing/Index.cshtml">
-      <publishTime>11/30/2017 22:14:21</publishTime>
+      <publishTime>12/10/2017 21:23:11</publishTime>
     </File>
     <File Include="Views/Layouts/Index.cshtml">
       <publishTime>11/24/2017 15:29:07</publishTime>
@@ -4596,7 +4698,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
     <File Include="Views/Pages/Login.cshtml">
-      <publishTime>11/24/2017 15:29:07</publishTime>
+      <publishTime>12/10/2017 23:28:29</publishTime>
     </File>
     <File Include="Views/Pages/Login_2.cshtml">
       <publishTime>11/24/2017 15:29:07</publishTime>
@@ -4605,7 +4707,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
     <File Include="Views/Pages/Register.cshtml">
-      <publishTime>11/24/2017 15:29:07</publishTime>
+      <publishTime>12/10/2017 23:30:47</publishTime>
     </File>
     <File Include="Views/Pages/SearchResults.cshtml">
       <publishTime>11/24/2017 15:29:07</publishTime>
@@ -4713,7 +4815,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/30/2017 20:42:54</publishTime>
+      <publishTime>12/11/2017 09:46:03</publishTime>
     </File>
   </ItemGroup>
 </Project>

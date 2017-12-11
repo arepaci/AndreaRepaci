@@ -1,0 +1,14 @@
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\NLog.config
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\Core.dll.config
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\Core.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\Core.pdb
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\EntityFramework.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\NLog.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\EntityFramework.xml
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\bin\Release\NLog.xml
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\obj\Release\Core.csproj.CoreCompileInputs.cache
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\obj\Release\Core.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\obj\Release\Core.pdb
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\Persistence\obj\Release\Core.csprojResolveAssemblyReference.cache
