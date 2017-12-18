@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AndreaRepaciUI.andreaService;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -35,6 +36,14 @@ namespace Inspinia_MVC5.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult CheckLogin(string username, string password)
+        {
+            AndreaRepaciUI.andreaService.UserServiceClient client = new AndreaRepaciUI.andreaService.UserServiceClient();
+            boolView response = client.checkLogin(username, password);
+            return View();
+        }
+
         public ActionResult Login_2()
         {
             return View();
@@ -65,6 +74,6 @@ namespace Inspinia_MVC5.Controllers
             return View();
         }
 
-       
-	}
+
+    }
 }

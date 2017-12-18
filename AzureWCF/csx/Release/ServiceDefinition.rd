@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AzureWCF" generation="1" functional="0" release="0" Id="f2ecb5f3-2584-4a9d-89f4-6c985e13e654" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AzureWCF" generation="1" functional="0" release="0" Id="20947c23-c7e4-4aab-9373-bf6e0cb1508b" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="AzureWCFGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -117,7 +117,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="WCFServiceWebRole2" generation="1" functional="0" release="0" software="C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\csx\Release\roles\WCFServiceWebRole2" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="WCFServiceWebRole2" generation="1" functional="0" release="0" software="C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\AzureWCF\csx\Release\roles\WCFServiceWebRole2" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
               <inPort name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput" protocol="tcp" />
@@ -167,14 +167,14 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="069e3790-057e-4a22-a00e-ac02503485d3" ref="Microsoft.RedDog.Contract\ServiceContract\AzureWCFContract@ServiceDefinition">
+    <implementation Id="9b2f9e14-41ff-466c-93cd-c1e8a89bad93" ref="Microsoft.RedDog.Contract\ServiceContract\AzureWCFContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="8a0e2ed7-457a-4240-b8dc-326816f75f51" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole2:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="d649398f-e5c2-423b-bd21-53905086e520" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole2:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/AzureWCF/AzureWCFGroup/WCFServiceWebRole2:Endpoint1" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="d176e375-52c4-4601-8a5f-7fd549703ca3" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole2:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput@ServiceDefinition">
+        <interfaceReference Id="4d8df741-3307-4579-8ea3-c2013d1a9b7d" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole2:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/AzureWCF/AzureWCFGroup/WCFServiceWebRole2:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput" />
           </inPort>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{269E94AA-F256-40AD-AF55-C5991CF35B31}"
 EndProject
@@ -49,7 +49,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Checks", "0 Checks", "{30
 		TextFile2.txt = TextFile2.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ispinia MVC5", "Ispinia MVC5", "{CE544E7E-5D9A-4BC8-BC8B-B58C590751E9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{CE544E7E-5D9A-4BC8-BC8B-B58C590751E9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "Ispinia MVC5\Inspinia_MVC5\UI.csproj", "{A5859E0E-3C08-4045-B8DC-B3FB13655B00}"
 EndProject

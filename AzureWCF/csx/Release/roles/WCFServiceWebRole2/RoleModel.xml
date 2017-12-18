@@ -45,14 +45,14 @@
     <Property name="SetConfiguration" value="Configuration=Release" />
     <Property name="SetPlatform" value="Platform=AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5.1" />
-    <Property name="OutputDir" value="C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\" />
+    <Property name="OutputDir" value="C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\" />
     <Property name="EntryPoint" value="WCFServiceWebRole2.dll" />
-    <Property name="SourceDir" value="C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WCFServiceWebRole2\" />
-    <Property name="SitePhysicalPath" value="C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\" />
+    <Property name="SourceDir" value="C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFServiceWebRole2\" />
+    <Property name="SitePhysicalPath" value="C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\" />
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\">
+    <Site name="Web" physicalDirectory="C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\AzureWCF\obj\Release\WCFServiceWebRole2\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>
