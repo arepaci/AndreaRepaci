@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AzureWCF" generation="1" functional="0" release="0" Id="b5a2ec2a-fdf7-40bd-b4aa-1d767de48cf9" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AzureWCF" generation="1" functional="0" release="0" Id="9959a6bf-d087-4a15-9fe1-06dd1ac54d18" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="AzureWCFGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -167,14 +167,14 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="76d25a43-a451-4370-b441-a4ed2adf24e1" ref="Microsoft.RedDog.Contract\ServiceContract\AzureWCFContract@ServiceDefinition">
+    <implementation Id="3d10b726-f885-4c1e-947c-fe305cd593d8" ref="Microsoft.RedDog.Contract\ServiceContract\AzureWCFContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="3c956b71-6c53-436c-b733-56ed2f9a47cf" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole2:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="5c64da11-af0e-47ba-bff2-d001df3e64d8" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole2:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/AzureWCF/AzureWCFGroup/WCFServiceWebRole2:Endpoint1" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="46732536-7f26-430c-8d98-768693ec473e" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole2:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput@ServiceDefinition">
+        <interfaceReference Id="5ee0d3f8-24aa-4f99-968b-43fa9c79148e" ref="Microsoft.RedDog.Contract\Interface\WCFServiceWebRole2:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/AzureWCF/AzureWCFGroup/WCFServiceWebRole2:Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput" />
           </inPort>
