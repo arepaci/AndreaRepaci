@@ -1886,12 +1886,12 @@ namespace AndreaRepaciUI.LocalService {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public AndreaRepaciUI.LocalService.USER checkLoginResult;
+        public AndreaRepaciUI.LocalService.UserView checkLoginResult;
         
         public checkLoginResponse() {
         }
         
-        public checkLoginResponse(AndreaRepaciUI.LocalService.USER checkLoginResult) {
+        public checkLoginResponse(AndreaRepaciUI.LocalService.UserView checkLoginResult) {
             this.checkLoginResult = checkLoginResult;
         }
     }
@@ -2353,7 +2353,7 @@ namespace AndreaRepaciUI.LocalService {
             return base.Channel.checkLogin(request);
         }
         
-        public AndreaRepaciUI.LocalService.USER checkLogin(string username, string password) {
+        public AndreaRepaciUI.LocalService.UserView checkLogin(string username, string password) {
             AndreaRepaciUI.LocalService.checkLoginRequest inValue = new AndreaRepaciUI.LocalService.checkLoginRequest();
             inValue.username = username;
             inValue.password = password;

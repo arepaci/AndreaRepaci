@@ -63,3 +63,4 @@ C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\bin\
 C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Debug\UI.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Debug\AndreaRepaciUI.dll
 C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Debug\AndreaRepaciUI.pdb
+C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Debug\UI.csprojResolveAssemblyReference.cache

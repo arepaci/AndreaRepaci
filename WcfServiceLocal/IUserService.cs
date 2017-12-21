@@ -71,7 +71,7 @@ namespace WcfServiceLocal
         #region Utilities
 
         [OperationContract]
-        USER checkLogin(string username, string password);
+        UserView checkLogin(string username, string password);
 
         [OperationContract]
         vServiceGroupViewList GetServiceGroups();

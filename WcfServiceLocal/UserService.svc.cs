@@ -18,12 +18,12 @@ namespace WcfServiceLocal
 
         #region Utilities
 
-        public USER checkLogin(string username, string password)
+        public UserView checkLogin(string username, string password)
         {
             Core.Log.LogInfoLevel(string.Format("Called service UserService - Function checkLogin for user {0}",
                 username));
 
-            USER objout = null;
+            UserView objout = new UserView() { esito = Esito_Controlli.KO };
             try
             {
                 if (checkServizioAbilitato(Enum_Servizi.CheckLogin).bEsito)
@@ -35,7 +35,12 @@ namespace WcfServiceLocal
                         if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
                         {
                             Core.Log.LogInfoLevel(string.Format("Called service UserService - Checking availabilty for user {0}", username));
-                            objout = persistence.checkLogin(username, password);
+                            USER user = persistence.checkLogin(username, password);
+                            if (user != null)
+                            {
+                                objout.User = user;
+                                objout.esito = Esito_Controlli.OK;
+                            }
                         }
                     }
                     Core.Log.LogInfoLevel(string.Format("Called service UserService - Function checkLogin user {0} checked with value {1}", username, bcheck));
@@ -669,8 +674,8 @@ namespace WcfServiceLocal
 
 
 
-     
-     
+
+
         #endregion
 
 

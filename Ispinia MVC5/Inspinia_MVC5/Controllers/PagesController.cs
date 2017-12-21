@@ -44,7 +44,7 @@ namespace Inspinia_MVC5.Controllers
         public ActionResult CheckLogin(string username, string password)
         {
             UserServiceClient client = new UserServiceClient();
-            USER response = client.checkLogin(username, password);
+            UserView response = client.checkLogin(username, password);
             if (response != null)
             {
                 RedirectToAction("Dashboard_1", "Dashboard");
