@@ -1,0 +1,19 @@
+<publishData>
+  <publishTarget publishUrl="C:\Users\AndreaRepaciEuroSort\Desktop\Deploy WCF\">
+    <file relUrl="bin/NLog.config" publishTime="11/24/2017 15:29:07" />
+    <file relUrl="bin/EntityFramework.dll" publishTime="11/24/2017 15:29:22" />
+    <file relUrl="bin/NLog.xml" publishTime="11/24/2017 15:29:23" />
+    <file relUrl="bin/WCFData.dll" publishTime="12/20/2017 13:22:52" />
+    <file relUrl="bin/EntityFramework.xml" publishTime="11/24/2017 15:29:22" />
+    <file relUrl="bin/Core.dll.config" publishTime="12/17/2017 11:43:19" />
+    <file relUrl="bin/EntityFramework.SqlServer.dll" publishTime="11/24/2017 15:29:22" />
+    <file relUrl="bin/Core.dll" publishTime="12/20/2017 12:06:16" />
+    <file relUrl="bin/NLog.dll" publishTime="11/24/2017 15:29:23" />
+    <file relUrl="bin/WCFData.pdb" publishTime="12/20/2017 13:22:52" />
+    <file relUrl="WCFData.UserService.svc" publishTime="12/20/2017 22:00:33" />
+    <file relUrl="bin/Core.pdb" publishTime="12/20/2017 12:06:16" />
+    <file relUrl="Web.config" publishTime="11/24/2017 15:29:14" />
+    <file relUrl="bin/WCFData.dll.config" publishTime="11/24/2017 15:29:15" />
+    <file relUrl="bin/EntityFramework.SqlServer.xml" publishTime="11/24/2017 15:29:22" />
+  </publishTarget>
+</publishData>
