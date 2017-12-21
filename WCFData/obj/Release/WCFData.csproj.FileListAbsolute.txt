@@ -1,0 +1,16 @@
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\NLog.config
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\WCFData.dll.config
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\WCFData.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\WCFData.pdb
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\Core.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\EntityFramework.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\NLog.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\Core.pdb
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\Core.dll.config
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\EntityFramework.xml
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\bin\Release\NLog.xml
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\obj\Release\WCFData.csproj.CoreCompileInputs.cache
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\obj\Release\WCFData.dll
+C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\WCFData\obj\Release\WCFData.pdb

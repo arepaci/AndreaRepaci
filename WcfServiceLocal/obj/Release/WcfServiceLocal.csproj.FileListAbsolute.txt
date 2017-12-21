@@ -1,0 +1,17 @@
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\NLog.config
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\WcfServiceLocal.dll.config
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\WcfServiceLocal.dll
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\WcfServiceLocal.pdb
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\Core.dll
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\EntityFramework.dll
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\EntityFramework.SqlServer.dll
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\NLog.dll
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\Core.pdb
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\Core.dll.config
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\EntityFramework.xml
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\EntityFramework.SqlServer.xml
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\bin\NLog.xml
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\obj\Release\WcfServiceLocal.csprojResolveAssemblyReference.cache
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\obj\Release\WcfServiceLocal.csproj.CoreCompileInputs.cache
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\obj\Release\WcfServiceLocal.dll
+C:\Users\AndreaRepaciEuroSort\source\repos\AndreaRepaci\WcfServiceLocal\obj\Release\WcfServiceLocal.pdb

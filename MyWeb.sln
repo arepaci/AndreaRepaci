@@ -52,6 +52,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{CE544E7E-5D9A-4BC8-BC8B-B58C590751E9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "Ispinia MVC5\Inspinia_MVC5\UI.csproj", "{A5859E0E-3C08-4045-B8DC-B3FB13655B00}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E7356C04-ED67-4CD4-A4FD-DA046C37B236} = {E7356C04-ED67-4CD4-A4FD-DA046C37B236}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{2827A0C1-4A54-4B09-829E-939B9E47B6E5}"
 	ProjectSection(SolutionItems) = preProject

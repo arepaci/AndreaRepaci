@@ -118,7 +118,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Connected Services\andreaService\Reference.cs">
+    <Compile Include="Connected Services\LocalService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -151,94 +151,91 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.AddProfileResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.AddProfileResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.AddUsersResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.AddUsersResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.boolView.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.boolView.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.checkLoginResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.checkLoginResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.EnableUserResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.EnableUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetLanguagebyIdResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetLanguagebyIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetLanguagebyIdUserResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetLanguagebyIdUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetLanguagesResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetLanguagesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetProfileByIdResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetProfileByIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetProfilesByUserIdResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetProfilesByUserIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetProfilesResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetProfilesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetServiceGroupsResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetServiceGroupsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetUserByIdResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetUserByIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetUserResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetUsersByLanguageResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetUsersByLanguageResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetUsersByProfilesResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetUsersByProfilesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.GetUsersResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.GetUsersResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.LinguaView.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.LinguaView.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.LinguaViewList.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.LinguaViewList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.ProfileView.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.ProfileView.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.ProfileViewList.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.ProfileViewList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.UpdateProfileResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.UpdateProfileResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.UpdateUserResponse.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.UpdateUserResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.UserView.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.UserView.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.UserViewList.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.UserViewList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.vServiceGroupViewList.datasource">
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.vServiceGroupViewList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\andreaService\AndreaRepaciUI.andreaService.checkServizioAbilitatoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\andreaService\configuration91.svcinfo" />
-    <None Include="Connected Services\andreaService\configuration.svcinfo" />
-    <None Include="Connected Services\andreaService\Reference.svcmap">
+    <None Include="Connected Services\LocalService\UserService.disco" />
+    <None Include="Connected Services\LocalService\configuration91.svcinfo" />
+    <None Include="Connected Services\LocalService\configuration.svcinfo" />
+    <None Include="Connected Services\LocalService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\andreaService\UserService.disco" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -449,17 +446,17 @@
     <Content Include="Images\landing\azure-postersmall.psd" />
     <Content Include="Images\landing\CV-Europass-20161109-Repaci-EN.pdf" />
     <Content Include="Images\landing\CV-Europass-20171210-Repaci-IT.pdf" />
-    <None Include="Connected Services\andreaService\UserService.xsd">
+    <None Include="Connected Services\LocalService\UserService.wsdl" />
+    <None Include="Connected Services\LocalService\UserService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\andreaService\UserService1.wsdl" />
-    <None Include="Connected Services\andreaService\UserService1.xsd">
+    <None Include="Connected Services\LocalService\UserService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\andreaService\UserService2.xsd">
+    <None Include="Connected Services\LocalService\UserService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\andreaService\UserService3.xsd">
+    <None Include="Connected Services\LocalService\UserService3.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\andrearepaci - FTP.pubxml" />
@@ -1830,7 +1827,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\andreaService\" />
+    <WCFMetadataStorage Include="Connected Services\LocalService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
