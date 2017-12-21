@@ -229,6 +229,9 @@
     <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.vServiceGroupViewList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\LocalService\AndreaRepaciUI.LocalService.USER.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\LocalService\UserService.disco" />
     <None Include="Connected Services\LocalService\configuration91.svcinfo" />
     <None Include="Connected Services\LocalService\configuration.svcinfo" />

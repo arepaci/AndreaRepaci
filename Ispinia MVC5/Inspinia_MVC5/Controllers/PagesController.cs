@@ -34,12 +34,26 @@ namespace Inspinia_MVC5.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult ErrorLogin(string username, string password)
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult CheckLogin(string username, string password)
         {
             UserServiceClient client = new UserServiceClient();
-            boolView response = client.checkLogin(username, password);
+            USER response = client.checkLogin(username, password);
+            if (response != null)
+            {
+                RedirectToAction("Dashboard_1", "Dashboard");
+                Session["user"] = response;
+            }
+            else
+            {
+                RedirectToAction("Login/ErrorLogin", "Pages");
+            }
             return View();
         }
 

@@ -18,13 +18,12 @@ namespace WcfServiceLocal
 
         #region Utilities
 
-        public boolView checkLogin(string username, string password)
+        public USER checkLogin(string username, string password)
         {
             Core.Log.LogInfoLevel(string.Format("Called service UserService - Function checkLogin for user {0}",
                 username));
 
-            boolView bout = new boolView() { bEsito = false, esito = Esito_Controlli.KO };
-
+            USER objout = null;
             try
             {
                 if (checkServizioAbilitato(Enum_Servizi.CheckLogin).bEsito)
@@ -36,24 +35,18 @@ namespace WcfServiceLocal
                         if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
                         {
                             Core.Log.LogInfoLevel(string.Format("Called service UserService - Checking availabilty for user {0}", username));
-                            bout.bEsito = persistence.checkLogin(username, password);
-                            bout.esito = Esito_Controlli.OK;
+                            objout = persistence.checkLogin(username, password);
                         }
                     }
                     Core.Log.LogInfoLevel(string.Format("Called service UserService - Function checkLogin user {0} checked with value {1}", username, bcheck));
                 }
-                else
-                {
-                    bout.esito = Esito_Controlli.SERVIZIO_NON_ATTIVO;
-                }
             }
             catch (Exception ex)
             {
-                bout.esito = Esito_Controlli.KO;
                 LogFataloLevel(string.Format("service UserService checkLogin : {0}", Log.GetExException(ex)));
             }
 
-            return bout;
+            return objout;
         }
 
         public vServiceGroupViewList GetServiceGroups()

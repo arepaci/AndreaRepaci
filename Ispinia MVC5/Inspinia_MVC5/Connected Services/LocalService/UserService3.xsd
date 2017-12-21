@@ -194,7 +194,7 @@
   <xs:element name="checkLoginResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Core.CustomClasses" minOccurs="0" name="checkLoginResult" nillable="true" type="q24:boolView" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Core" minOccurs="0" name="checkLoginResult" nillable="true" type="q24:USER" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
