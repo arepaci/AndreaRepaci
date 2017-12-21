@@ -40,8 +40,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite", "WebSite\", "{E57
 		SlnRelativePath = "WebSite\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFData", "WCFData\WCFData.csproj", "{414E2559-703B-437A-8E36-D60E7C1F661B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Checks", "0 Checks", "{30F19E40-64C7-4A11-838B-CBCE904B2BCC}"
 	ProjectSection(SolutionItems) = preProject
 		0 Checks\attuale.html = 0 Checks\attuale.html
@@ -77,28 +75,6 @@ Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureWCF", "AzureWCF\AzureW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceWebRole2", "WCFServiceWebRole2\WCFServiceWebRole2.csproj", "{894A6DEC-9F95-4AF9-B96B-DD77A8C3E786}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFService", "WCFService\", "{8EE357E7-FF73-4AB9-B1D3-5FBFF49169C5}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_65066"
-		Debug.AspNetCompiler.PhysicalPath = "WCFService\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65066\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_65066"
-		Release.AspNetCompiler.PhysicalPath = "WCFService\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65066\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "65066"
-		SlnRelativePath = "WCFService\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLocal", "WcfServiceLocal\WcfServiceLocal.csproj", "{E7356C04-ED67-4CD4-A4FD-DA046C37B236}"
 EndProject
 Global
@@ -119,10 +95,6 @@ Global
 		{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{414E2559-703B-437A-8E36-D60E7C1F661B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{414E2559-703B-437A-8E36-D60E7C1F661B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{414E2559-703B-437A-8E36-D60E7C1F661B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{414E2559-703B-437A-8E36-D60E7C1F661B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A5859E0E-3C08-4045-B8DC-B3FB13655B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A5859E0E-3C08-4045-B8DC-B3FB13655B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5859E0E-3C08-4045-B8DC-B3FB13655B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -135,10 +107,6 @@ Global
 		{894A6DEC-9F95-4AF9-B96B-DD77A8C3E786}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{894A6DEC-9F95-4AF9-B96B-DD77A8C3E786}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{894A6DEC-9F95-4AF9-B96B-DD77A8C3E786}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EE357E7-FF73-4AB9-B1D3-5FBFF49169C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EE357E7-FF73-4AB9-B1D3-5FBFF49169C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EE357E7-FF73-4AB9-B1D3-5FBFF49169C5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EE357E7-FF73-4AB9-B1D3-5FBFF49169C5}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{E7356C04-ED67-4CD4-A4FD-DA046C37B236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E7356C04-ED67-4CD4-A4FD-DA046C37B236}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7356C04-ED67-4CD4-A4FD-DA046C37B236}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -151,13 +119,11 @@ Global
 		{6A2E1760-B655-4778-8A79-02CE6F1DA0BF} = {7CFFDB4F-EC12-4D00-8ABC-2B0F2F1B307A}
 		{3D100D73-9A3D-4AB4-978D-FDDD2BB8595B} = {ED941B3D-4BD6-4ED6-981A-FB94D4B552AF}
 		{E578C005-3DFA-4AF7-AE19-9FD22C5CE5F9} = {9A7791F9-F93F-4E0E-AD89-0328BD4E3D07}
-		{414E2559-703B-437A-8E36-D60E7C1F661B} = {269E94AA-F256-40AD-AF55-C5991CF35B31}
 		{A5859E0E-3C08-4045-B8DC-B3FB13655B00} = {CE544E7E-5D9A-4BC8-BC8B-B58C590751E9}
 		{E143273B-A651-4FD6-8D94-4CCD036582FC} = {2827A0C1-4A54-4B09-829E-939B9E47B6E5}
 		{21EF9C21-A88F-40D8-BBDE-819F0336B5B7} = {2827A0C1-4A54-4B09-829E-939B9E47B6E5}
 		{D5646D2A-A57C-4A2B-BD43-728D4B0F0EDA} = {269E94AA-F256-40AD-AF55-C5991CF35B31}
 		{894A6DEC-9F95-4AF9-B96B-DD77A8C3E786} = {269E94AA-F256-40AD-AF55-C5991CF35B31}
-		{8EE357E7-FF73-4AB9-B1D3-5FBFF49169C5} = {269E94AA-F256-40AD-AF55-C5991CF35B31}
 		{E7356C04-ED67-4CD4-A4FD-DA046C37B236} = {269E94AA-F256-40AD-AF55-C5991CF35B31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
