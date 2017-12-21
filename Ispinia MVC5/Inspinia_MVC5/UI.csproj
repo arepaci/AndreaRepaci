@@ -123,11 +123,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\UserServiceRef\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\AppViewsController.cs" />
     <Compile Include="Controllers\CSSAnimationsController.cs" />
     <Compile Include="Controllers\EcommerceController.cs" />
@@ -238,91 +233,6 @@
     <None Include="Connected Services\LocalService\configuration91.svcinfo" />
     <None Include="Connected Services\LocalService\configuration.svcinfo" />
     <None Include="Connected Services\LocalService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.AddProfileResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.AddUsersResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.boolView.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.checkLoginResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.EnableUserResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetLanguagebyIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetLanguagebyIdUserResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetLanguagesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetProfileByIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetProfilesByUserIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetProfilesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetServiceGroupsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetUserByIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetUserResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetUsersByLanguageResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetUsersByProfilesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.GetUsersResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.LinguaView.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.LinguaViewList.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.ProfileView.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.ProfileViewList.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.UpdateProfileResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.UpdateUserResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.UserView.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.UserViewList.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\UserServiceRef\AndreaRepaciUI.UserServiceRef.vServiceGroupViewList.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\UserServiceRef\UserService.disco" />
-    <None Include="Connected Services\UserServiceRef\configuration91.svcinfo" />
-    <None Include="Connected Services\UserServiceRef\configuration.svcinfo" />
-    <None Include="Connected Services\UserServiceRef\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -547,19 +457,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\LocalService\UserService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UserServiceRef\UserService.wsdl" />
-    <None Include="Connected Services\UserServiceRef\UserService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UserServiceRef\UserService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UserServiceRef\UserService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UserServiceRef\UserService3.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\andrearepaci - FTP.pubxml" />
@@ -1931,7 +1828,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\LocalService\" />
-    <WCFMetadataStorage Include="Connected Services\UserServiceRef\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
