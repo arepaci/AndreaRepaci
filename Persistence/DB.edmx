@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="myWebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="myWebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="GRUPPO">
           <Key>
             <PropertyRef Name="ID_GRUPPO" />
@@ -83,8 +83,8 @@
           <Property Name="ID_LANGUAGE" Type="uniqueidentifier" Nullable="false" />
           <Property Name="PASSWORD" Type="nvarchar(max)" />
         </EntityType>
-        <!--Errori trovati durante la generazione:
-avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'WebDB.dbo.vServiceGroups'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'myWeb.dbo.vServiceGroups' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="vServiceGroups">
           <Key>
             <PropertyRef Name="GRUPPO_SERVIZIO" />
@@ -100,8 +100,8 @@ avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'We
           <Property Name="ID_SERVIZIO" Type="uniqueidentifier" Nullable="false" />
           <Property Name="ID_GRUPPO" Type="uniqueidentifier" Nullable="false" />
         </EntityType>
-        <!--Errori trovati durante la generazione:
-avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'WebDB.dbo.vUserPermissions'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'myWeb.dbo.vUserPermissions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="vUserPermissions">
           <Key>
             <PropertyRef Name="ID_USER" />
