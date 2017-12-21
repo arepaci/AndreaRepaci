@@ -9,10 +9,10 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/AndreaRepaciUI.dll">
-      <publishTime>12/20/2017 13:37:44</publishTime>
+      <publishTime>12/21/2017 09:21:50</publishTime>
     </File>
     <File Include="bin/AndreaRepaciUI.pdb">
-      <publishTime>12/20/2017 13:37:44</publishTime>
+      <publishTime>12/21/2017 09:21:50</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>11/24/2017 15:29:22</publishTime>
@@ -21,10 +21,10 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>11/24/2017 15:29:22</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>12/20/2017 13:40:23</publishTime>
+      <publishTime>12/21/2017 09:27:36</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>12/20/2017 13:40:23</publishTime>
+      <publishTime>12/21/2017 09:27:35</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>11/24/2017 15:29:22</publishTime>
@@ -175,6 +175,84 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
     </File>
     <File Include="Connected Services/andreaService/AndreaRepaciUI.andreaService.vServiceGroupViewList.datasource">
       <publishTime>12/17/2017 10:34:06</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.AddProfileResponse.datasource">
+      <publishTime>12/21/2017 09:18:39</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.AddUsersResponse.datasource">
+      <publishTime>12/21/2017 09:18:38</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.boolView.datasource">
+      <publishTime>12/21/2017 09:18:37</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.checkLoginResponse.datasource">
+      <publishTime>12/21/2017 09:18:39</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.EnableUserResponse.datasource">
+      <publishTime>12/21/2017 09:18:38</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetLanguagebyIdResponse.datasource">
+      <publishTime>12/21/2017 09:18:39</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetLanguagebyIdUserResponse.datasource">
+      <publishTime>12/21/2017 09:18:40</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetLanguagesResponse.datasource">
+      <publishTime>12/21/2017 09:18:39</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetProfileByIdResponse.datasource">
+      <publishTime>12/21/2017 09:18:39</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetProfilesByUserIdResponse.datasource">
+      <publishTime>12/21/2017 09:18:39</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetProfilesResponse.datasource">
+      <publishTime>12/21/2017 09:18:38</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetServiceGroupsResponse.datasource">
+      <publishTime>12/21/2017 09:18:39</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetUserByIdResponse.datasource">
+      <publishTime>12/21/2017 09:18:38</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetUserResponse.datasource">
+      <publishTime>12/21/2017 09:18:37</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetUsersByLanguageResponse.datasource">
+      <publishTime>12/21/2017 09:18:38</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetUsersByProfilesResponse.datasource">
+      <publishTime>12/21/2017 09:18:38</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.GetUsersResponse.datasource">
+      <publishTime>12/21/2017 09:18:38</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.LinguaView.datasource">
+      <publishTime>12/21/2017 09:18:36</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.LinguaViewList.datasource">
+      <publishTime>12/21/2017 09:18:36</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.ProfileView.datasource">
+      <publishTime>12/21/2017 09:18:36</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.ProfileViewList.datasource">
+      <publishTime>12/21/2017 09:18:37</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.UpdateProfileResponse.datasource">
+      <publishTime>12/21/2017 09:18:39</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.UpdateUserResponse.datasource">
+      <publishTime>12/21/2017 09:18:38</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.UserView.datasource">
+      <publishTime>12/21/2017 09:18:36</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.UserViewList.datasource">
+      <publishTime>12/21/2017 09:18:37</publishTime>
+    </File>
+    <File Include="Connected Services/LocalService/AndreaRepaciUI.LocalService.vServiceGroupViewList.datasource">
+      <publishTime>12/21/2017 09:18:36</publishTime>
     </File>
     <File Include="Content/animate.css">
       <publishTime>11/24/2017 15:29:06</publishTime>
@@ -3342,7 +3420,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>12/20/2017 13:40:21</publishTime>
+      <publishTime>12/21/2017 09:27:34</publishTime>
     </File>
     <File Include="Scripts/api/typehead_collection.json">
       <publishTime>11/24/2017 15:29:07</publishTime>
@@ -4827,7 +4905,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>11/24/2017 15:29:07</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/20/2017 13:40:17</publishTime>
+      <publishTime>12/21/2017 09:27:32</publishTime>
     </File>
   </ItemGroup>
 </Project>

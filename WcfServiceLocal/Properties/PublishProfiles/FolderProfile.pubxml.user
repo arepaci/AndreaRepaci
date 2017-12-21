@@ -6,7 +6,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\AndreaRepaciEuroSort\Desktop\WcfDeploy</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Deploy WCF</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Core.dll">
@@ -43,7 +43,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>12/21/2017 08:53:34</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/21/2017 09:14:13</publishTime>
+      <publishTime>12/21/2017 09:28:16</publishTime>
     </File>
   </ItemGroup>
 </Project>
