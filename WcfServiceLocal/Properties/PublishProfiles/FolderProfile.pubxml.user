@@ -31,10 +31,10 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>12/21/2017 11:14:12</publishTime>
     </File>
     <File Include="bin/WcfServiceLocal.dll">
-      <publishTime>12/21/2017 14:47:03</publishTime>
+      <publishTime>12/21/2017 15:12:35</publishTime>
     </File>
     <File Include="bin/WcfServiceLocal.pdb">
-      <publishTime>12/21/2017 14:47:03</publishTime>
+      <publishTime>12/21/2017 15:12:35</publishTime>
     </File>
     <File Include="ServiceBase.svc">
       <publishTime>12/21/2017 11:13:58</publishTime>
@@ -43,7 +43,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>12/21/2017 11:13:58</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/21/2017 14:47:04</publishTime>
+      <publishTime>12/21/2017 15:17:32</publishTime>
     </File>
   </ItemGroup>
 </Project>

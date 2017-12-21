@@ -118,6 +118,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\LocalServiceWcf\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AppViewsController.cs" />
     <Compile Include="Controllers\CSSAnimationsController.cs" />
     <Compile Include="Controllers\EcommerceController.cs" />
@@ -146,6 +151,91 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.AddProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.AddUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.boolView.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.checkLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.EnableUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetLanguagebyIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetLanguagebyIdUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetLanguagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetProfileByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetProfilesByUserIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetProfilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetServiceGroupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetUserByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetUsersByLanguageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetUsersByProfilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.GetUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.LinguaView.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.LinguaViewList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.ProfileView.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.ProfileViewList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.UpdateProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.UpdateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.UserView.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.UserViewList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\LocalServiceWcf\AndreaRepaciUI.LocalServiceWcf.vServiceGroupViewList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\LocalServiceWcf\UserService.disco" />
+    <None Include="Connected Services\LocalServiceWcf\configuration91.svcinfo" />
+    <None Include="Connected Services\LocalServiceWcf\configuration.svcinfo" />
+    <None Include="Connected Services\LocalServiceWcf\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -356,6 +446,19 @@
     <Content Include="Images\landing\azure-postersmall.psd" />
     <Content Include="Images\landing\CV-Europass-20161109-Repaci-EN.pdf" />
     <Content Include="Images\landing\CV-Europass-20171210-Repaci-IT.pdf" />
+    <None Include="Connected Services\LocalServiceWcf\UserService.wsdl" />
+    <None Include="Connected Services\LocalServiceWcf\UserService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LocalServiceWcf\UserService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LocalServiceWcf\UserService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LocalServiceWcf\UserService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\PublishProfiles\andrearepaci - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\andrearepaci - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\AndreaRepaciWeb - Web Deploy.pubxml" />
@@ -1722,6 +1825,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\LocalServiceWcf\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
