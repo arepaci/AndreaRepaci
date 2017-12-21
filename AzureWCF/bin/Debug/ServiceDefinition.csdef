@@ -26,14 +26,10 @@
     <Imports>
       <Import moduleName="RemoteAccess" />
       <Import moduleName="RemoteForwarder" />
-      <Import moduleName="Diagnostics" />
     </Imports>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\AzureWCF\rcf\Debug\WCFServiceWebRole2Content\" />
-      </Content>
-      <Content destination=".\">
-        <SourceDirectory path="C:\Users\AndreaRepaciEuroSort\Source\Repos\AndreaRepaci\AzureWCF\ecf\WCFServiceWebRole2Content\" />
+        <SourceDirectory path="C:\Users\Administrator\Source\Repos\AndreaRepaci\AzureWCF\rcf\Debug\WCFServiceWebRole2Content\" />
       </Content>
     </Contents>
   </WebRole>

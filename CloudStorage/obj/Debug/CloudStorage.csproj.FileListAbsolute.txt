@@ -4,3 +4,9 @@ C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\obj\Debug\CloudStor
 C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\obj\Debug\CloudStorage.csproj.CoreCompileInputs.cache
 C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\obj\Debug\CloudStorage.dll
 C:\Users\andrea\Source\repos\AndreaRepaci\MyWeb\CloudStorage\obj\Debug\CloudStorage.pdb
+C:\Users\Administrator\Source\Repos\AndreaRepaci\CloudStorage\bin\Debug\CloudStorage.dll
+C:\Users\Administrator\Source\Repos\AndreaRepaci\CloudStorage\bin\Debug\CloudStorage.pdb
+C:\Users\Administrator\Source\Repos\AndreaRepaci\CloudStorage\obj\Debug\CloudStorage.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\AndreaRepaci\CloudStorage\obj\Debug\CloudStorage.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\AndreaRepaci\CloudStorage\obj\Debug\CloudStorage.dll
+C:\Users\Administrator\Source\Repos\AndreaRepaci\CloudStorage\obj\Debug\CloudStorage.pdb
