@@ -1,4 +1,4 @@
-﻿using AndreaRepaciUI.LocalService;
+﻿
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -43,17 +43,17 @@ namespace Inspinia_MVC5.Controllers
         [HttpPost]
         public ActionResult CheckLogin(string username, string password)
         {
-            UserServiceClient client = new UserServiceClient();
-            UserView response = client.checkLogin(username, password);
-            if (response != null)
-            {
-                RedirectToAction("Dashboard_1", "Dashboard");
-                Session["user"] = response;
-            }
-            else
-            {
-                RedirectToAction("Login/ErrorLogin", "Pages");
-            }
+            //UserServiceClient client = new UserServiceClient();
+            //UserView response = client.checkLogin(username, password);
+            //if (response != null)
+            //{
+            //    RedirectToAction("Dashboard_1", "Dashboard");
+            //    Session["user"] = response;
+            //}
+            //else
+            //{
+            //    RedirectToAction("Login/ErrorLogin", "Pages");
+            //}
             return View();
         }
 
