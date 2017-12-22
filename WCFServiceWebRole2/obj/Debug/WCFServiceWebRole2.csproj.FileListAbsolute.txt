@@ -89,7 +89,6 @@ C:\Users\Administrator\Source\Repos\AndreaRepaci\WCFServiceWebRole2\bin\Core.pdb
 C:\Users\Administrator\Source\Repos\AndreaRepaci\WCFServiceWebRole2\bin\Core.dll.config
 C:\Users\Administrator\Source\Repos\AndreaRepaci\WCFServiceWebRole2\bin\EntityFramework.xml
 C:\Users\Administrator\Source\Repos\AndreaRepaci\WCFServiceWebRole2\bin\EntityFramework.SqlServer.xml
-C:\Users\Administrator\Source\Repos\AndreaRepaci\WCFServiceWebRole2\bin\Microsoft.Azure.KeyVault.Core.xml
 C:\Users\Administrator\Source\Repos\AndreaRepaci\WCFServiceWebRole2\bin\Microsoft.Data.Edm.xml
 C:\Users\Administrator\Source\Repos\AndreaRepaci\WCFServiceWebRole2\bin\Microsoft.Data.OData.xml
 C:\Users\Administrator\Source\Repos\AndreaRepaci\WCFServiceWebRole2\bin\Microsoft.Data.Services.Client.xml

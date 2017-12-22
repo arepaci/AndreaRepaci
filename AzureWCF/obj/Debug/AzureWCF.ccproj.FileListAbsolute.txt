@@ -101,7 +101,6 @@ C:\Users\Administrator\Source\Repos\AndreaRepaci\AzureWCF\obj\Debug\WCFServiceWe
 C:\Users\Administrator\Source\Repos\AndreaRepaci\AzureWCF\obj\Debug\WCFServiceWebRole2\bin\ko\Microsoft.Data.Services.Client.resources.dll
 C:\Users\Administrator\Source\Repos\AndreaRepaci\AzureWCF\obj\Debug\WCFServiceWebRole2\bin\ko\System.Spatial.resources.dll
 C:\Users\Administrator\Source\Repos\AndreaRepaci\AzureWCF\obj\Debug\WCFServiceWebRole2\bin\Microsoft.Azure.KeyVault.Core.dll
-C:\Users\Administrator\Source\Repos\AndreaRepaci\AzureWCF\obj\Debug\WCFServiceWebRole2\bin\Microsoft.Azure.KeyVault.Core.xml
 C:\Users\Administrator\Source\Repos\AndreaRepaci\AzureWCF\obj\Debug\WCFServiceWebRole2\bin\Microsoft.Data.Edm.dll
 C:\Users\Administrator\Source\Repos\AndreaRepaci\AzureWCF\obj\Debug\WCFServiceWebRole2\bin\Microsoft.Data.Edm.xml
 C:\Users\Administrator\Source\Repos\AndreaRepaci\AzureWCF\obj\Debug\WCFServiceWebRole2\bin\Microsoft.Data.OData.dll

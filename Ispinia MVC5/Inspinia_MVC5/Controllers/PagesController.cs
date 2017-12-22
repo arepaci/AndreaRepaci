@@ -1,10 +1,12 @@
 ﻿
+using Core.CustomClasses;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Core;
 namespace Inspinia_MVC5.Controllers
 {
     public class PagesController : Controller
@@ -45,15 +47,20 @@ namespace Inspinia_MVC5.Controllers
         {
             //UserServiceClient client = new UserServiceClient();
             //UserView response = client.checkLogin(username, password);
-            //if (response != null)
-            //{
-            //    RedirectToAction("Dashboard_1", "Dashboard");
-            //    Session["user"] = response;
-            //}
-            //else
-            //{
-            //    RedirectToAction("Login/ErrorLogin", "Pages");
-            //}
+
+            Core.FakeService.UserService client = new Core.FakeService.UserService();
+            UserView response = client.checkLogin(username, password);
+            if (response != null)
+            {
+                Session["user"] = response;
+               return  RedirectToAction("Dashboard_1", "Dashboard");
+               
+            }
+            else
+            {
+                RedirectToAction("Login/ErrorLogin", "Pages");
+            }
+
             return View();
         }
 
