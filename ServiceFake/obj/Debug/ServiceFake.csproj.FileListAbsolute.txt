@@ -1,0 +1,17 @@
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\NLog.config
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\ServiceFake.dll.config
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\ServiceFake.dll
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\ServiceFake.pdb
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\Core.dll
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\NLog.dll
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\Core.pdb
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\Core.dll.config
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\bin\Debug\NLog.xml
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\obj\Debug\ServiceFake.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\obj\Debug\ServiceFake.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\obj\Debug\ServiceFake.dll
+C:\Users\Administrator\source\repos\AndreaRepaci\ServiceFake\obj\Debug\ServiceFake.pdb
