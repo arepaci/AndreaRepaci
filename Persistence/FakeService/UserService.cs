@@ -88,6 +88,7 @@ namespace Core.FakeService
         }
 
 
+
         #region Lingue
 
         public LinguaViewList GetLanguages()
@@ -197,6 +198,25 @@ namespace Core.FakeService
         #endregion
 
         #region Users   
+
+        public GetUserInfoById_Result GetUserInfoById(Guid idUSer)
+        {
+            GetUserInfoById_Result objout = null;
+            try
+            {
+                using (var ctx = new myWebEntities())
+                {
+                   objout = ctx.GetUserInfoById(idUSer).First();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                LogFataloLevel(string.Format("service UserService checkLogin : {0}", Log.GetExException(ex)));
+            }
+
+            return objout;
+        }
 
         public UserView GetUser(string username, string password)
         {

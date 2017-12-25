@@ -48,6 +48,9 @@
       <End Role="MENU" EntitySet="MENUs" />
       <End Role="PROFILE" EntitySet="PROFILEs" />
     </AssociationSet>
+    <FunctionImport Name="GetUserInfoById" ReturnType="Collection(myWebModel.GetUserInfoById_Result)">
+      <Parameter Name="USER_ID" Mode="In" Type="Guid" />
+    </FunctionImport>
   </EntityContainer>
   <EntityType Name="USER">
     <Key>
@@ -182,4 +185,16 @@
     <End Type="myWebModel.MENU" Role="MENU" Multiplicity="*" />
     <End Type="myWebModel.PROFILE" Role="PROFILE" Multiplicity="*" />
   </Association>
+  <ComplexType Name="GetUserInfoById_Result">
+    <Property Type="Guid" Name="ID_USER" Nullable="false" />
+    <Property Type="Boolean" Name="IS_ENABLED" Nullable="true" />
+    <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PASSWORD" Nullable="true" />
+    <Property Type="Guid" Name="ID_PROFILE" Nullable="false" />
+    <Property Type="String" Name="DESCRIZIONE_PROFILO" Nullable="false" />
+    <Property Type="Guid" Name="MENU_ID_FATHER" Nullable="true" />
+    <Property Type="Guid" Name="MENU_ID" Nullable="false" />
+    <Property Type="String" Name="CODE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="DESCRIZIONE_MENU" Nullable="false" />
+  </ComplexType>
 </Schema>

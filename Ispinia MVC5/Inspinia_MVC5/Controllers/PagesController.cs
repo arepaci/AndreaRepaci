@@ -50,11 +50,14 @@ namespace Inspinia_MVC5.Controllers
 
             Core.FakeService.UserService client = new Core.FakeService.UserService();
             UserView response = client.checkLogin(username, password);
+
             if (response != null)
             {
+                ProfileViewList listaProfili = client.GetProfilesByUserId(response.User.ID_USER);
                 Session["user"] = response;
-               return  RedirectToAction("Dashboard_1", "Dashboard");
-               
+                Session["profili"] = listaProfili;
+                return RedirectToAction("Dashboard_1", "Dashboards");
+
             }
             else
             {
@@ -73,6 +76,24 @@ namespace Inspinia_MVC5.Controllers
         {
             return View();
         }
+        
+        public ActionResult ConfirmRegistration(string nickname, string email, string password)
+        {
+            Core.FakeService.UserService client = new Core.FakeService.UserService();
+            USER newUser = new USER();
+            newUser.EMAIL = email;
+            newUser.ID_USER = Guid.NewGuid();
+            newUser.IS_ENABLED = false;
+            newUser.PASSWORD = password;
+            //newUser.ID_PROFILE = client.GetProfiles().ProfileList.Where()
+            //newUser.ID_LANGUAGE = 
+            newUser.NAME = nickname;
+
+            boolView response = client.AddUsers(newUser);
+
+            return View();
+        }
+
 
         public ActionResult NotFoundError()
         {

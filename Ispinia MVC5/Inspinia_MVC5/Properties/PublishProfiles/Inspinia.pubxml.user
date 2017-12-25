@@ -9,10 +9,10 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/AndreaRepaciUI.dll">
-      <publishTime>12/21/2017 15:21:34</publishTime>
+      <publishTime>12/23/2017 21:41:29</publishTime>
     </File>
     <File Include="bin/AndreaRepaciUI.pdb">
-      <publishTime>12/21/2017 15:21:34</publishTime>
+      <publishTime>12/23/2017 21:41:29</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>12/21/2017 11:14:10</publishTime>
@@ -21,10 +21,19 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>12/21/2017 11:14:10</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>12/21/2017 15:21:58</publishTime>
+      <publishTime>12/23/2017 21:41:53</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>12/21/2017 15:21:58</publishTime>
+      <publishTime>12/23/2017 21:41:52</publishTime>
+    </File>
+    <File Include="bin/Core.dll">
+      <publishTime>12/23/2017 18:07:32</publishTime>
+    </File>
+    <File Include="bin/Core.dll.config">
+      <publishTime>12/22/2017 14:47:42</publishTime>
+    </File>
+    <File Include="bin/Core.pdb">
+      <publishTime>12/23/2017 18:07:32</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>12/21/2017 11:14:11</publishTime>
@@ -36,6 +45,12 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>12/21/2017 11:14:12</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/21/2017 11:14:12</publishTime>
+    </File>
+    <File Include="bin/NLog.config">
+      <publishTime>12/21/2017 11:13:43</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
       <publishTime>12/21/2017 11:14:12</publishTime>
     </File>
     <File Include="bin/pl/System.Web.Optimization.resources.dll">
@@ -3492,13 +3507,13 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>12/21/2017 11:13:37</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>12/21/2017 11:13:43</publishTime>
+      <publishTime>12/22/2017 14:50:00</publishTime>
     </File>
     <File Include="pdf/example.pdf">
       <publishTime>12/21/2017 11:13:43</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>12/21/2017 15:21:54</publishTime>
+      <publishTime>12/23/2017 21:41:48</publishTime>
     </File>
     <File Include="Scripts/api/typehead_collection.json">
       <publishTime>12/21/2017 11:13:36</publishTime>
@@ -4983,7 +4998,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>12/21/2017 11:13:36</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/21/2017 15:21:38</publishTime>
+      <publishTime>12/23/2017 18:07:35</publishTime>
     </File>
   </ItemGroup>
 </Project>

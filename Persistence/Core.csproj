@@ -86,6 +86,9 @@
     <Compile Include="FakeService\IUserService.cs" />
     <Compile Include="FakeService\ServiceBase.cs" />
     <Compile Include="FakeService\UserService.cs" />
+    <Compile Include="GetUserInfoById_Result.cs">
+      <DependentUpon>DB.tt</DependentUpon>
+    </Compile>
     <Compile Include="GRUPPO.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>

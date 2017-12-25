@@ -54,5 +54,12 @@ namespace Core
             }
             return bcheck;
         }
+
+        public GetUserInfoById_Result GetUserInfoById(Guid UserId)
+        {
+            Core.FakeService.UserService client = new Core.FakeService.UserService();
+            GetUserInfoById_Result userInfo = client.GetUserInfoById(UserId);
+            return userInfo;
+        }
     }
 }

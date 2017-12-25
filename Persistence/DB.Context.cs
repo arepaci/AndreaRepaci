@@ -12,6 +12,8 @@ namespace Core
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class myWebEntities : DbContext
     {
@@ -33,5 +35,14 @@ namespace Core
         public virtual DbSet<vServiceGroup> vServiceGroups { get; set; }
         public virtual DbSet<MENU> MENUs { get; set; }
         public virtual DbSet<vUserPermission> vUserPermissions { get; set; }
+    
+        public virtual ObjectResult<GetUserInfoById_Result> GetUserInfoById(Nullable<System.Guid> uSER_ID)
+        {
+            var uSER_IDParameter = uSER_ID.HasValue ?
+                new ObjectParameter("USER_ID", uSER_ID) :
+                new ObjectParameter("USER_ID", typeof(System.Guid));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetUserInfoById_Result>("GetUserInfoById", uSER_IDParameter);
+        }
     }
 }

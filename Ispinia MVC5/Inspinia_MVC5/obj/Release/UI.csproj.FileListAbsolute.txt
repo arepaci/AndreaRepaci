@@ -64,3 +64,9 @@ C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\
 C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Release\UI.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Release\AndreaRepaciUI.dll
 C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\obj\Release\AndreaRepaciUI.pdb
+C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\bin\NLog.config
+C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\bin\Core.dll
+C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\bin\NLog.dll
+C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\bin\Core.pdb
+C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\bin\Core.dll.config
+C:\Users\Administrator\Source\Repos\AndreaRepaci\Ispinia MVC5\Inspinia_MVC5\bin\NLog.xml
