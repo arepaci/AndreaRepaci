@@ -159,6 +159,41 @@ namespace Core.FakeService
             return bout;
         }
 
+        public LinguaView GetLanguagebyCode(string CODE)
+        {
+            LogInfoLevel(string.Format("Called service UserService - Function GetLanguagebyCode for the language {0}", CODE));
+            LinguaView bout = new LinguaView()
+            {
+                lingua = null,
+                esito = Esito_Controlli.KO
+            };
+
+            try
+            {
+                if (checkServizioAbilitato(Enum_Servizi.GetLanguagebyId).bEsito)
+                {
+                    using (var persistece = new IdentityUtilities())
+                    {
+                        bout.lingua = persistece.GetLanguagebyCode(CODE);
+                        bout.esito = Esito_Controlli.OK;
+                    }
+                }
+                else
+                {
+                    bout.esito = Esito_Controlli.SERVIZIO_NON_ATTIVO;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogFataloLevel(string.Format("service UserService GetLanguagebyCode : {0}", Log.GetExException(ex)));
+                bout.esito = Esito_Controlli.KO;
+            }
+
+            LogInfoLevel(string.Format("Exit service UserService - Function GetLanguagebyCode for the language {0}", CODE));
+            return bout;
+        }
+
+
         public LinguaView GetLanguagebyIdUser(Guid idUser)
         {
             LogInfoLevel(string.Format("Called service UserService - Function GetLanguagebyIdUser for the user {0}", idUser.ToString()));
@@ -619,6 +654,41 @@ namespace Core.FakeService
             Core.Log.LogInfoLevel(string.Format("Exit service UserService - Function UpdateProfile for the profile {0}", profile.DESCRIPTION));
             return bout;
         }
+
+        public ProfileView GetProfileByCode(string CODE)
+        {
+            Core.Log.LogInfoLevel(string.Format("Called service UserService - Function GetProfileByCode for the profile {0}", CODE));
+            ProfileView bout = new ProfileView()
+            {
+                Profile = null,
+                esito = Esito_Controlli.KO
+            };
+
+            try
+            {
+                if (checkServizioAbilitato(Enum_Servizi.GetProfileById).bEsito)
+                {
+                    using (var persistece = new IdentityUtilities())
+                    {
+                        bout.Profile = persistece.GetProfilesByCode(CODE);
+                        bout.esito = Esito_Controlli.OK;
+                    }
+                }
+                else
+                {
+                    bout.esito = Esito_Controlli.SERVIZIO_NON_ATTIVO;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogFataloLevel(string.Format("service UserService GetProfileById : {0}", Log.GetExException(ex)));
+                bout.esito = Esito_Controlli.KO;
+            }
+
+            Core.Log.LogInfoLevel(string.Format("Exit service UserService - Function GetProfileById for the profile {0}", CODE));
+            return bout;
+        }
+
 
         public ProfileView GetProfileById(Guid idPriflo)
         {

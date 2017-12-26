@@ -251,6 +251,19 @@ namespace Core
             return objout;
         }
 
+        public PROFILE GetProfilesByCode(string code)
+        {
+            PROFILE objout = null;
+            using (var ctx = new myWebEntities())
+            {
+                objout = (from a in ctx.PROFILEs
+                          where a.CODE == code
+                          select a).FirstOrDefault();
+            }
+            return objout;
+        }
+
+
         public List<LANGUAGE> GetLanguages()
         {
             List<LANGUAGE> objout = null;
@@ -270,6 +283,17 @@ namespace Core
             }
             return objout;
         }
+
+        public LANGUAGE GetLanguagebyCode(string CODE)
+        {
+            LANGUAGE objout = null;
+            using (var ctx = new myWebEntities())
+            {
+                objout = ctx.LANGUAGEs.FirstOrDefault(o => o.CODE == CODE);
+            }
+            return objout;
+        }
+
 
         public LANGUAGE GetLanguagebyIdUser(Guid idUser)
         {

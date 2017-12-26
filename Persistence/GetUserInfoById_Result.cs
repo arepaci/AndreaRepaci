@@ -17,6 +17,7 @@ namespace Core
         public Nullable<bool> IS_ENABLED { get; set; }
         public string EMAIL { get; set; }
         public string PASSWORD { get; set; }
+        public string NICKNAME { get; set; }
         public System.Guid ID_PROFILE { get; set; }
         public string DESCRIZIONE_PROFILO { get; set; }
         public Nullable<System.Guid> MENU_ID_FATHER { get; set; }

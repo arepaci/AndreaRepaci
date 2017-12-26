@@ -119,6 +119,7 @@
           <ScalarProperty Name="IS_ENABLED" ColumnName="IS_ENABLED" />
           <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
           <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
           <ScalarProperty Name="ID_PROFILE" ColumnName="ID_PROFILE" />
           <ScalarProperty Name="DESCRIZIONE_PROFILO" ColumnName="DESCRIZIONE_PROFILO" />
           <ScalarProperty Name="MENU_ID_FATHER" ColumnName="MENU_ID_FATHER" />

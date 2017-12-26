@@ -84,9 +84,10 @@ namespace Inspinia_MVC5.Controllers
             newUser.EMAIL = email;
             newUser.ID_USER = Guid.NewGuid();
             newUser.IS_ENABLED = false;
+            newUser.SURNAME = string.Empty;
             newUser.PASSWORD = password;
-            //newUser.ID_PROFILE = client.GetProfiles().ProfileList.Where()
-            //newUser.ID_LANGUAGE = 
+            newUser.ID_PROFILE = client.GetProfileByCode("USR").Profile.ID_PROFILE;
+            newUser.ID_LANGUAGE = client.GetLanguagebyCode("ITA").lingua.ID_LANGUAGE; 
             newUser.NAME = nickname;
 
             boolView response = client.AddUsers(newUser);

@@ -28,7 +28,9 @@ namespace Inspinia_MVC5.Controllers
                 return RedirectToAction("Login", "Pages");
             }
             Core.FakeService.UserService userService = new Core.FakeService.UserService();
-            GetUserInfoById_Result UserInfo = userService.GetUserInfoById(((UserView)(Session["user"])).User.ID_USER);
+            GetUserInfoById_Result userinfo = new GetUserInfoById_Result();
+            Session["userInfo"] = userinfo = userService.GetUserInfoById(((UserView)(Session["user"])).User.ID_USER);
+            ViewBag.NickName = userinfo.NICKNAME;
             return View();
         }
 

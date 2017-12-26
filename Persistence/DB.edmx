@@ -465,6 +465,7 @@ warning 6002: The table/view 'myWeb.dbo.vUserPermissions' does not have a primar
           <Property Type="Boolean" Name="IS_ENABLED" Nullable="true" />
           <Property Type="String" Name="EMAIL" Nullable="false" MaxLength="100" />
           <Property Type="String" Name="PASSWORD" Nullable="true" />
+          <Property Type="String" Name="NICKNAME" Nullable="false" />
           <Property Type="Guid" Name="ID_PROFILE" Nullable="false" />
           <Property Type="String" Name="DESCRIZIONE_PROFILO" Nullable="false" />
           <Property Type="Guid" Name="MENU_ID_FATHER" Nullable="true" />
@@ -596,6 +597,7 @@ warning 6002: The table/view 'myWeb.dbo.vUserPermissions' does not have a primar
                 <ScalarProperty Name="IS_ENABLED" ColumnName="IS_ENABLED" />
                 <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
                 <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
                 <ScalarProperty Name="ID_PROFILE" ColumnName="ID_PROFILE" />
                 <ScalarProperty Name="DESCRIZIONE_PROFILO" ColumnName="DESCRIZIONE_PROFILO" />
                 <ScalarProperty Name="MENU_ID_FATHER" ColumnName="MENU_ID_FATHER" />
