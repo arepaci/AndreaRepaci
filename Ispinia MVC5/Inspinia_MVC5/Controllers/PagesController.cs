@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Core;
 using System.Net.Mail;
+using System.Web.Mail;
 
 namespace Inspinia_MVC5.Controllers
 {
@@ -84,40 +85,45 @@ namespace Inspinia_MVC5.Controllers
         {
             return View();
         }
-
-        public ActionResult SendMail()
+        
+        public ActionResult SendMail(string email, string nickname)
         {
+            
             try
             {
 
-                SmtpClient mySmtpClient = new SmtpClient("my.smtp.exampleserver.net");
-
+                SmtpClient mySmtpClient = new SmtpClient("authsmtp.securemail.pro");
+                // Set SSL smtp
+                mySmtpClient.EnableSsl = true;
+                mySmtpClient.Port = 465;
                 // set smtp-client with basicAuthentication
                 mySmtpClient.UseDefaultCredentials = false;
                 System.Net.NetworkCredential basicAuthenticationInfo = new
-                   System.Net.NetworkCredential("username", "password");
+                   System.Net.NetworkCredential("info@repaci.eu", "Andreare.76");
                 mySmtpClient.Credentials = basicAuthenticationInfo;
-
+                
                 // add from,to mailaddresses
-                MailAddress from = new MailAddress("test@example.com", "TestFromName");
-                MailAddress to = new MailAddress("test2@example.com", "TestToName");
-                MailMessage myMail = new System.Net.Mail.MailMessage(from, to);
+                MailAddress from = new MailAddress("info@repaci.eu", "Info ");
+                MailAddress to = new MailAddress(email, nickname);
+                System.Net.Mail.MailMessage myMail = new System.Net.Mail.MailMessage(from, to);
+                
 
                 // add ReplyTo
-                MailAddress replyto = new MailAddress("reply@example.com");
-                myMail.ReplyToList.Add("");
+                //MailAddress replyto = new MailAddress("info@repaci.eu");
+                //myMail.ReplyToList.Add("");
 
                 // set subject and encoding
-                myMail.Subject = "Test message";
+                myMail.Subject = "Conferma Registrazione repaci.eu";
                 myMail.SubjectEncoding = System.Text.Encoding.UTF8;
 
                 // set body-message and encoding
-                myMail.Body = "<b>Test Mail</b><br>using <b>HTML</b>.";
+                myMail.Body = "<b>Conferma di registrazione al portale repaci.eu</b><br>using <b>HTML</b>.";
                 myMail.BodyEncoding = System.Text.Encoding.UTF8;
                 // text or html
                 myMail.IsBodyHtml = true;
 
                 mySmtpClient.Send(myMail);
+
             }
 
             catch (SmtpException ex)
@@ -147,7 +153,7 @@ namespace Inspinia_MVC5.Controllers
             newUser.NAME = nickname;
 
             boolView response = client.AddUsers(newUser);
-
+            SendMail(email, nickname);
             return RedirectToAction("RegistrationConfirm", "Pages");
         }
 
