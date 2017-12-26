@@ -1717,6 +1717,7 @@
     <Content Include="Views\Miscellaneous\SpinnersUsage.cshtml" />
     <Content Include="Views\AppViews\ActivityStream.cshtml" />
     <Content Include="Views\Dashboards\Dashboard.cshtml" />
+    <Content Include="Views\Pages\RegistrationConfirm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

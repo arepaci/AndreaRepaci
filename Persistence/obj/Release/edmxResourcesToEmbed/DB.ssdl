@@ -202,6 +202,9 @@ warning 6002: The table/view 'myWeb.dbo.vUserPermissions' does not have a primar
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="GetUserInfoById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="USER_ID" Type="uniqueidentifier" Mode="In" />
+  </Function>
   <EntityContainer Name="myWebModelStoreContainer">
     <EntitySet Name="GRUPPO" EntityType="Self.GRUPPO" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GRUPPO_SERVIZI" EntityType="Self.GRUPPO_SERVIZI" Schema="dbo" store:Type="Tables" />
