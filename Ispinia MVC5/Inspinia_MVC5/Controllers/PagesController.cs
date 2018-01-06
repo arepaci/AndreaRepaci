@@ -9,6 +9,8 @@ using System.Web.Mvc;
 using Core;
 using System.Net.Mail;
 using System.Web.Mail;
+using System.Reflection;
+using System.Text;
 
 namespace Inspinia_MVC5.Controllers
 {
@@ -54,6 +56,7 @@ namespace Inspinia_MVC5.Controllers
             Core.FakeService.UserService client = new Core.FakeService.UserService();
             UserView response = client.checkLogin(username, password);
 
+
             if (response != null)
             {
                 ProfileViewList listaProfili = client.GetProfilesByUserId(response.User.ID_USER);
@@ -66,6 +69,9 @@ namespace Inspinia_MVC5.Controllers
             {
                 RedirectToAction("Login/ErrorLogin", "Pages");
             }
+
+            // test mail send
+            //SendMail("arepaci@gmail.com", "andrea", Guid.NewGuid());
 
             return View();
         }
@@ -86,7 +92,7 @@ namespace Inspinia_MVC5.Controllers
             return View();
         }
         
-        public ActionResult SendMail(string email, string nickname)
+        public ActionResult SendMail(string email, string nickname, Guid idUser)
         {
             
             try
@@ -94,8 +100,8 @@ namespace Inspinia_MVC5.Controllers
 
                 SmtpClient mySmtpClient = new SmtpClient("authsmtp.securemail.pro");
                 // Set SSL smtp
-                mySmtpClient.EnableSsl = true;
-                mySmtpClient.Port = 465;
+                mySmtpClient.EnableSsl = false;
+                mySmtpClient.Port = 25;
                 // set smtp-client with basicAuthentication
                 mySmtpClient.UseDefaultCredentials = false;
                 System.Net.NetworkCredential basicAuthenticationInfo = new
@@ -106,24 +112,25 @@ namespace Inspinia_MVC5.Controllers
                 MailAddress from = new MailAddress("info@repaci.eu", "Info ");
                 MailAddress to = new MailAddress(email, nickname);
                 System.Net.Mail.MailMessage myMail = new System.Net.Mail.MailMessage(from, to);
-                
-
-                // add ReplyTo
-                //MailAddress replyto = new MailAddress("info@repaci.eu");
-                //myMail.ReplyToList.Add("");
-
+               
                 // set subject and encoding
                 myMail.Subject = "Conferma Registrazione repaci.eu";
                 myMail.SubjectEncoding = System.Text.Encoding.UTF8;
 
+                var fileStream = new FileStream(Server.MapPath("~") + "\\Content\\templateMail\\AttivazioneEmail.html", FileMode.Open, FileAccess.Read);
+                using (var streamReader = new StreamReader(fileStream, Encoding.UTF8))
+                {
+                    myMail.Body = streamReader.ReadToEnd();
+                    myMail.Body.Replace("{0}", String.Format("{0}{1}{2}", Server.MapPath("Pages"),"/",idUser.ToString()));
+                }
+                
                 // set body-message and encoding
-                myMail.Body = "<b>Conferma di registrazione al portale repaci.eu</b><br>using <b>HTML</b>.";
+                //myMail.Body = "<b>Conferma di registrazione al portale repaci.eu</b><br>using <b>HTML</b>.";
                 myMail.BodyEncoding = System.Text.Encoding.UTF8;
                 // text or html
                 myMail.IsBodyHtml = true;
 
                 mySmtpClient.Send(myMail);
-
             }
 
             catch (SmtpException ex)
@@ -153,7 +160,7 @@ namespace Inspinia_MVC5.Controllers
             newUser.NAME = nickname;
 
             boolView response = client.AddUsers(newUser);
-            SendMail(email, nickname);
+            SendMail(email, nickname, newUser.ID_USER);
             return RedirectToAction("RegistrationConfirm", "Pages");
         }
 
