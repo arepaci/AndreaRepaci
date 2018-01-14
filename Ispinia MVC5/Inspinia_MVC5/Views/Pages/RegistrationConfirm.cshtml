@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AR | Conferma Registrazione</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="~/Content/animate.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">AR</h1>
+
+            </div>
+            <h3>Conferma di avvenuta registrazione</h3>
+
+            <p style="font-weight:bold; text-align:justify">
+                Il tuo account e' stato creato ma deve essere attivato.
+            </p><p style="text-align:justify">
+                Ti e' stata inviata una mail con il link per rendere il tuo account operativo.
+            </p><p style="text-align:justify">
+                Ti ringrazio per esserti registrato al mio portale.
+            </p>
+            <form class="m-t" role="form" action="#">
+                <a class="btn btn-sm btn-white btn-block" href="@Url.Action("Login", "Pages")">Accedi</a>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+

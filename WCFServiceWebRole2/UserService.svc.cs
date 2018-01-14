@@ -19,12 +19,12 @@ namespace WCFServiceWebRole2
     {
         #region Utilities
 
-        public boolView checkLogin(string username, string password)
+        public UserView checkLogin(string username, string password)
         {
             Core.Log.LogInfoLevel(string.Format("Called service UserService - Function checkLogin for user {0}",
                 username));
 
-            boolView bout = new boolView() { bEsito = false, esito = Esito_Controlli.KO };
+            UserView bout = new UserView() { User = null, esito = Esito_Controlli.KO };
 
             try
             {
@@ -37,7 +37,7 @@ namespace WCFServiceWebRole2
                         if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
                         {
                             Core.Log.LogInfoLevel(string.Format("Called service UserService - Checking availabilty for user {0}", username));
-                            bout.bEsito = persistence.checkLogin(username, password);
+                            bout.User = persistence.checkLogin(username, password);
                             bout.esito = Esito_Controlli.OK;
                         }
                     }
@@ -675,7 +675,12 @@ namespace WCFServiceWebRole2
             return bout;
         }
 
-     
+        boolView IUserService.checkLogin(string username, string password)
+        {
+            throw new NotImplementedException();
+        }
+
+
 
 
         #endregion

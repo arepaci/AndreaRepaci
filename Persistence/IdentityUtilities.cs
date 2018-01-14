@@ -45,17 +45,15 @@ namespace Core
 
         #endregion
 
-        public bool checkLogin(string username, string password)
+        public USER checkLogin(string username, string password)
         {
-            bool bcheck = false;
+            USER objout = null;
             using (var ctx = new myWebEntities())
             {
-                var User = ctx.USERS.FirstOrDefault(o=>o.EMAIL.ToUpper().Equals(username.ToUpper()) && o.PASSWORD.ToUpper().Equals(password.ToUpper()));
-                if (User != null)
-                    bcheck = true;
-
+                objout = ctx.USERS.FirstOrDefault(o=>o.EMAIL.ToUpper().Equals(username.ToUpper()) && o.PASSWORD.ToUpper().Equals(password.ToUpper()));
+              
             }
-            return bcheck;
+            return objout;
         }
 
         #region Users
@@ -253,6 +251,19 @@ namespace Core
             return objout;
         }
 
+        public PROFILE GetProfilesByCode(string code)
+        {
+            PROFILE objout = null;
+            using (var ctx = new myWebEntities())
+            {
+                objout = (from a in ctx.PROFILEs
+                          where a.CODE == code
+                          select a).FirstOrDefault();
+            }
+            return objout;
+        }
+
+
         public List<LANGUAGE> GetLanguages()
         {
             List<LANGUAGE> objout = null;
@@ -272,6 +283,17 @@ namespace Core
             }
             return objout;
         }
+
+        public LANGUAGE GetLanguagebyCode(string CODE)
+        {
+            LANGUAGE objout = null;
+            using (var ctx = new myWebEntities())
+            {
+                objout = ctx.LANGUAGEs.FirstOrDefault(o => o.CODE == CODE);
+            }
+            return objout;
+        }
+
 
         public LANGUAGE GetLanguagebyIdUser(Guid idUser)
         {

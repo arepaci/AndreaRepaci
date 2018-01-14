@@ -112,5 +112,22 @@
         <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
       </EndProperty>
     </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="GetUserInfoById" FunctionName="myWebModel.Store.GetUserInfoById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="myWebModel.GetUserInfoById_Result">
+          <ScalarProperty Name="ID_USER" ColumnName="ID_USER" />
+          <ScalarProperty Name="IS_ENABLED" ColumnName="IS_ENABLED" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
+          <ScalarProperty Name="ID_PROFILE" ColumnName="ID_PROFILE" />
+          <ScalarProperty Name="DESCRIZIONE_PROFILO" ColumnName="DESCRIZIONE_PROFILO" />
+          <ScalarProperty Name="MENU_ID_FATHER" ColumnName="MENU_ID_FATHER" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="DESCRIZIONE_MENU" ColumnName="DESCRIZIONE_MENU" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>
