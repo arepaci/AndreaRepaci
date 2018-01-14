@@ -87,7 +87,24 @@ namespace Core.FakeService
 
         }
 
-
+        public boolView ActivateUser(Guid UserId)
+        {
+            boolView bcheck = new boolView() { bEsito = false, esito = Esito_Controlli.KO };
+            using (var ctx = new myWebEntities())
+            {
+                var user = ctx.USERS.FirstOrDefault(o=> o.ID_USER == UserId);
+                if (user != null)
+                {
+                    user.IS_ENABLED = true;
+                    ctx.SaveChanges();
+                    bcheck.esito = Esito_Controlli.OK;
+                    bcheck.bEsito = true;
+                }
+                else
+                { bcheck.esito = Esito_Controlli.UTENTE_NON_TROVATO; }
+            }
+            return bcheck;
+        }
 
         #region Lingue
 
@@ -298,7 +315,7 @@ namespace Core.FakeService
                 {
                     using (var persistence = new Core.IdentityUtilities())
                     {
-
+                        objout = new UserView();
                         objout.User = persistence.getUserbyId(User_Id);
                         objout.esito = Esito_Controlli.OK;
                     }

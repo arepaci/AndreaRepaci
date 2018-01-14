@@ -1719,6 +1719,8 @@
     <Content Include="Views\AppViews\ActivityStream.cshtml" />
     <Content Include="Views\Dashboards\Dashboard.cshtml" />
     <Content Include="Views\Pages\RegistrationConfirm.cshtml" />
+    <Content Include="Views\Pages\Activation.cshtml" />
+    <Content Include="Views\Pages\ActivationView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

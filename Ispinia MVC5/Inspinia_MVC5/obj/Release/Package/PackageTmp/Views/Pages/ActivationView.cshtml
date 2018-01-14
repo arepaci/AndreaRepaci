@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "ActivationView";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AR | Login</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="~/Content/animate.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">AR</h1>
+
+            </div>
+            @if (ViewBag.UserId != null)
+    {
+        <h3>
+            <label> Benvenuto @ViewBag.UserName </label>
+        </h3>
+        <p>
+            @if ((bool)ViewBag.UserActivationState)
+            {<label id="small-chat">La tua utenza é stata attivata; torna alla pagina di login per accedere al portale</label>}
+            else
+            {<label id="small-chat">La tua utenza non risulta essere attiva; invia una mail a info@repaci.eu per informazioni</label> }
+        </p>
+
+}
+else
+{
+        <h3>
+            <label> Attenzione !!! </label>
+        </h3>
+        <p>
+            <label >Non risulta inviata nessuna richiesta di attivazione a tuo nome. Effettua la registrazione per accedere al portale </label>
+        </p>
+
+}
+
+        <form class="m-t" role="form" action="#">
+            <a class="btn btn-sm btn-white btn-block" href="@Url.Action("Login", "Pages")">Vai alla pagina di Login</a>
+            <a class="btn btn-sm btn-white btn-block" href="@Url.Action("Registration", "Pages")">Effettua la registrazione</a>
+        </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

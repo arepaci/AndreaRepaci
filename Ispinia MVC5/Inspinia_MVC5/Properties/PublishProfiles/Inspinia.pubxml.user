@@ -9,10 +9,10 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/AndreaRepaciUI.dll">
-      <publishTime>12/26/2017 10:38:41</publishTime>
+      <publishTime>01/14/2018 16:07:35</publishTime>
     </File>
     <File Include="bin/AndreaRepaciUI.pdb">
-      <publishTime>12/26/2017 10:38:41</publishTime>
+      <publishTime>01/14/2018 16:07:35</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>12/21/2017 11:14:10</publishTime>
@@ -21,19 +21,19 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>12/21/2017 11:14:10</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>12/26/2017 10:38:51</publishTime>
+      <publishTime>01/14/2018 16:07:45</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>12/26/2017 10:38:51</publishTime>
+      <publishTime>01/14/2018 16:07:45</publishTime>
     </File>
     <File Include="bin/Core.dll">
-      <publishTime>12/26/2017 10:38:39</publishTime>
+      <publishTime>01/14/2018 16:07:34</publishTime>
     </File>
     <File Include="bin/Core.dll.config">
       <publishTime>12/22/2017 14:47:42</publishTime>
     </File>
     <File Include="bin/Core.pdb">
-      <publishTime>12/26/2017 10:38:39</publishTime>
+      <publishTime>01/14/2018 16:07:34</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>12/21/2017 11:14:11</publishTime>
@@ -715,6 +715,9 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
     </File>
     <File Include="Content/style.css">
       <publishTime>12/21/2017 11:13:35</publishTime>
+    </File>
+    <File Include="Content/templateMail/AttivazioneEmail.html">
+      <publishTime>01/06/2018 17:36:12</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>12/21/2017 11:13:36</publishTime>
@@ -3513,7 +3516,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>12/21/2017 11:13:43</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>12/26/2017 10:38:47</publishTime>
+      <publishTime>01/14/2018 16:07:40</publishTime>
     </File>
     <File Include="Scripts/api/typehead_collection.json">
       <publishTime>12/21/2017 11:13:36</publishTime>
@@ -4864,6 +4867,12 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
     </File>
     <File Include="Views/Miscellaneous/Validation.cshtml">
       <publishTime>12/21/2017 11:13:36</publishTime>
+    </File>
+    <File Include="Views/Pages/Activation.cshtml">
+      <publishTime>01/06/2018 17:45:13</publishTime>
+    </File>
+    <File Include="Views/Pages/ActivationView.cshtml">
+      <publishTime>01/14/2018 15:54:03</publishTime>
     </File>
     <File Include="Views/Pages/EmptyPage.cshtml">
       <publishTime>12/21/2017 11:13:36</publishTime>

@@ -18,6 +18,7 @@ namespace Core.FakeService
 
         UserView GetUserById(Guid User_Id);
 
+        boolView ActivateUser(Guid UserId);
 
         UserViewList GetUsersByProfiles(Guid ProfileId);
 
